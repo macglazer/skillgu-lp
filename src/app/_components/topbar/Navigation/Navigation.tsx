@@ -19,12 +19,12 @@ export const Navigation = ({
   return (
     <nav
       className={clx(
-        'flex gap-8 justify-between flex-col lg:flex-row',
+        'flex flex-col justify-between gap-8 lg:flex-row',
         className,
       )}
     >
-      <ul className="flex gap-6 items-start flex-col lg:flex-row lg:items-center">
-        {navLinks.map(item => (
+      <ul className="flex flex-col items-start gap-6 lg:flex-row lg:items-center">
+        {navLinks.map((item) => (
           <li key={item.id} onClick={onClick}>
             <Link
               className="text-14px font-medium text-base800"
@@ -35,16 +35,16 @@ export const Navigation = ({
           </li>
         ))}
       </ul>
-      <div className="flex gap-3 flex-col lg:flex-row">
+      <div className="flex flex-col gap-3 lg:flex-row">
         <Link
           href=""
-          className="rounded-full text-14px py-10px px-4 text-center font-semibold bg-secondaryLight text-secondary"
+          className="rounded-full bg-secondaryLight px-4 py-10px text-center text-14px font-semibold text-secondary"
         >
           Zostań Mentorem
         </Link>
         <Link
           href=""
-          className="rounded-full text-14px py-10px px-8 text-center font-semibold bg-secondary text-base000"
+          className="rounded-full bg-secondary px-8 py-10px text-center text-14px font-semibold text-base000"
         >
           Zaloguj się
         </Link>
