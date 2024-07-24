@@ -1,12 +1,21 @@
-import Link, { type LinkProps } from 'next/link'
+import Link from 'next/link'
 import clx from 'classnames'
-export const NavBar = ({ className }: { className?: string }) => {
-  const navLinks = [
-    { name: 'Strona główna', id: 'home', href: '#home' },
-    { name: 'O nas', id: 'about', href: '#about' },
-    { name: 'Lista mentorów', id: 'mentors', href: '#mentors' },
-    { name: 'FAQ', id: 'faq', href: '#faq' },
-  ]
+import { MouseEventHandler } from 'react'
+
+const navLinks = [
+  { name: 'Strona główna', id: 'home', href: '#home' },
+  { name: 'O nas', id: 'about', href: '#about' },
+  { name: 'Lista mentorów', id: 'mentors', href: '#mentors' },
+  { name: 'FAQ', id: 'faq', href: '#faq' },
+]
+
+export const Navigation = ({
+  className,
+  onClick,
+}: {
+  className?: string
+  onClick?: MouseEventHandler<HTMLLIElement>
+}) => {
   return (
     <nav
       className={clx(
@@ -16,7 +25,7 @@ export const NavBar = ({ className }: { className?: string }) => {
     >
       <ul className="flex gap-6 items-start flex-col lg:flex-row lg:items-center">
         {navLinks.map(item => (
-          <li key={item.id}>
+          <li key={item.id} onClick={onClick}>
             <Link
               className="text-14px font-medium text-base800"
               href={item.href}
@@ -29,13 +38,13 @@ export const NavBar = ({ className }: { className?: string }) => {
       <div className="flex gap-3 flex-col lg:flex-row">
         <Link
           href=""
-          className="rounded-full text-14px py-10px px-4 font-semibold bg-secondaryLight text-secondary"
+          className="rounded-full text-14px py-10px px-4 text-center font-semibold bg-secondaryLight text-secondary"
         >
           Zostań Mentorem
         </Link>
         <Link
           href=""
-          className="rounded-full text-14px py-10px px-8 font-semibold bg-secondary text-base000"
+          className="rounded-full text-14px py-10px px-8 text-center font-semibold bg-secondary text-base000"
         >
           Zaloguj się
         </Link>
