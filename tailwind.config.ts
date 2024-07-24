@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/ui/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -16,7 +17,7 @@ const config: Config = {
         '40px': '40px', // cta-banner
         '57px': '57px', // cta-banner
         '88px': '88px', // padding
-      }, 
+      },
       fontSize: {
         '56px': '56px',
         '48px': '48px',
@@ -35,7 +36,18 @@ const config: Config = {
         primary: '#252B61',
         secondary: '#FF6A3D',
         secondaryLight: '#FFEFEA',
-        'white-11': 'rgba(255, 255, 255, 0.11)'
+        base000: '#FFFFFF',
+        base200: '#F8F8FB',
+        base400: '#E2E9FC',
+        base600: '#8E9ABB',
+        base800: '#56658F',
+        error100: '#F51F59',
+        error200: '#F9EBEB',
+        success100: '#34C759',
+        success200: '#EBF9EE',
+        warning100: '#FCA004',
+        warning200: '#FFFBED',
+        'white-11': 'rgba(255, 255, 255, 0.11)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
