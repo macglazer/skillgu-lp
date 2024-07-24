@@ -8,7 +8,7 @@ export default function RootTemplate({
   return (
     <div>
       <Topbar />
-      {children}
+      <main className="pt-[67px] lg:pt-[77px]">{children}</main>
       <Footer />
     </div>
   )

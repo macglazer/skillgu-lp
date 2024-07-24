@@ -28,6 +28,9 @@ const config: Config = {
         '14px': '14px',
         '12px': '12px',
       },
+      // screens: {
+      //   'lg': '968px',
+      // },
       lineHeight: {
         '100.8px': '100.8px', // cta-banner
         '72px': '72px', // cta-banner
