@@ -2,6 +2,7 @@ export const MobileMenuButton = ({ onClick }: { onClick: () => void }) => {
   return (
     <button
       className="flex items-center justify-center px-2 hover:cursor-pointer lg:hidden"
+      aria-label="Mobile menu icon"
       onClick={onClick}
     >
       <svg

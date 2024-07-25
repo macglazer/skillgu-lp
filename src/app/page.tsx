@@ -9,7 +9,7 @@ import {
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="text-primary">
       <HeroBanner />
       <Features />
       <MentorsList />

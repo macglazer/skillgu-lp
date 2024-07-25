@@ -10,8 +10,12 @@ import Logo from '@/app/ui/icons/Logo'
 export const Topbar = () => {
   const [isShown, setIsShown] = useState(false)
   return (
-    <div className="fixed left-0 right-0 top-0 m-auto flex max-w-[1264px] items-center justify-between border-b border-base200 bg-base000 px-5 py-4 lg:py-5">
-      <Link className="flex items-center justify-center" href="">
+    <div className="fixed left-0 right-0 top-0 m-auto flex max-w-[1304px] items-center justify-between border-b border-base200 bg-base000 px-5 py-4">
+      <Link
+        className="flex items-center justify-center"
+        href=""
+        aria-label="Go to Home Page"
+      >
         <Logo />
       </Link>
       <Navigation className="hidden lg:flex" />
