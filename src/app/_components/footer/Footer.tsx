@@ -15,7 +15,7 @@ export const Footer = () => {
       <div className="flex flex-col justify-between gap-6 md:flex-row">
         <div className="flex max-w-96 flex-col gap-[25px] pr-5">
           <Logo />
-          <p className="text-14px font-medium text-base600">
+          <p className="text-14px font-medium leading-[25px] text-base600">
             Skillgu to miejsce, gdzie możesz znaleźć swojego następnego mentora.
           </p>
         </div>
