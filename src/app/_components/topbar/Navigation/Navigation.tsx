@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import clx from 'classnames'
 import { MouseEventHandler } from 'react'
+import { Paths } from '@/app/paths'
 
 const navLinks = [
-  { name: 'Strona główna', id: 'home', href: '#home' },
-  { name: 'O nas', id: 'about', href: '#about' },
-  { name: 'Lista mentorów', id: 'mentors', href: '#mentors' },
-  { name: 'FAQ', id: 'faq', href: '#faq' },
+  { name: 'Strona główna', id: 'home', href: Paths.HOME },
+  { name: 'O nas', id: 'about', href: Paths.ABOUT },
+  { name: 'Lista mentorów', id: 'mentors', href: Paths.MENTORS },
+  { name: 'FAQ', id: 'faq', href: Paths.FAQ },
 ]
 
 export const Navigation = ({

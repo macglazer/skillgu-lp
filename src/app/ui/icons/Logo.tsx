@@ -1,6 +1,6 @@
 import clx from 'classnames'
 
-const Logo = ({
+export const Logo = ({
   className,
   color = '#262B5E',
   circleColor = '#ED734B',
