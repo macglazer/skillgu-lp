@@ -18,6 +18,9 @@ const config: Config = {
         '57px': '57px', // cta-banner
         '88px': '88px', // padding
       },
+      fontFamily: {
+        artist: ['Alkatra', 'system-ui'],
+      },
       fontSize: {
         '56px': '56px',
         '48px': '48px',
@@ -59,6 +62,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require('@tailwindcss/typography')],
 }
 export default config
