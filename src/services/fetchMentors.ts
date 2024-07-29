@@ -1,3 +1,7 @@
+import axios from 'axios'
+
+axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
+
 type ResponseData = {
   mentors: Mentor[]
   total: number
@@ -9,31 +13,31 @@ export type Mentor = {
   id: string
   name: string
   company: string
-  // price: number;
   profession: string
   reviewsAvgRate: number
   reviewsCount: number
   special: string
-  // specialVariant: SpecialVariant;
-  // skill: DropdownOption[];
   title: string
   username: string
 }
 
-export type Option = {
-  value: string
-  label: string
-}
-
-export type FiltersSelected = {
-  categories: Option[]
-}
-
-export const fetchMentorFilteredList = async (
-  filters?: FiltersSelected,
+export const fetchMentorListByCategoryValue = async (
+  category: string,
 ): Promise<ResponseData> => {
   try {
-    //    TODO
+    const filterMentorToSend = {
+      take: 8,
+      category,
+    }
+    // TODO
+    // POST ???
+    //     const response = await axios.post(
+    //       '/api/mentor/filtered-mentors',
+    //       filterMentorToSend,
+    //     )
+
+    //const { mentors } = response.data
+    //return mentors;
     const mentors = [
       {
         avatar_url:

@@ -5,13 +5,13 @@ import Link from 'next/link'
 
 import { MobileMenuButton } from './MobileMenuButton/MobileMenuButton'
 import { Navigation } from './Navigation'
-import Logo from '@/app/ui/icons/Logo'
+import Logo from '@/ui/icons/Logo'
 import { Paths } from '@/app/paths'
 
 export const Topbar = () => {
   const [isShown, setIsShown] = useState(false)
   return (
-    <div className="fixed z-10 left-0 right-0 top-0 border-b border-base200 bg-base000">
+    <div className="fixed left-0 right-0 top-0 z-10 border-b border-base200 bg-base000">
       <div className="m-auto flex max-w-[1304px] items-center justify-between px-5 py-4">
         <Link
           className="flex items-center justify-center"

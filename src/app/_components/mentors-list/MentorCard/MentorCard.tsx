@@ -1,5 +1,7 @@
-import { Star } from '@/app/ui/icons/Star'
-import { ProfileImage } from '@/app/ui/ProfileImage'
+import { Star } from '@/ui/icons/Star'
+import { ProfileImage } from '@/ui/ProfileImage'
+
+import { getReviewText } from '../helpers'
 
 export type Mentor = {
   avatar_url: string
@@ -7,13 +9,10 @@ export type Mentor = {
   id: string
   name: string
   company: string
-  // price: number;
   profession: string
   reviewsAvgRate: number
   reviewsCount: number
   special: string
-  // specialVariant: SpecialVariant;
-  // skill: DropdownOption[];
   title: string
   username: string
 }
@@ -32,9 +31,9 @@ export const MentorCard = ({
   username,
 }: Mentor) => {
   return (
-    <div className="flex flex-col gap-3 rounded-3xl border border-base200 p-5">
+    <div className="m-auto flex max-w-md flex-col gap-3 rounded-3xl border border-base200 p-5">
       <div className="relative">
-        <ProfileImage alt="" src={avatar_url} />
+        <ProfileImage alt={`${name} profile image`} src={avatar_url} />
         {special ? (
           <p className="absolute left-2 top-2 rounded-3xl bg-success200 px-4 py-1 text-xs font-semibold text-success100">
             {special}
@@ -47,7 +46,7 @@ export const MentorCard = ({
           <div className="flex items-center justify-between gap-1 text-xs">
             <Star />
             <p className="font-semibold">{reviewsAvgRate}</p>
-            <p className="font-medium text-base600">{`(${reviewsCount} recenzji)`}</p>
+            <p className="font-medium text-base600">{`(${reviewsCount} ${getReviewText(reviewsCount)})`}</p>
           </div>
         </div>
         <p className="text-xs font-medium leading-5 text-base600">{title}</p>

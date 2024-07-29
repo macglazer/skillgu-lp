@@ -1,3 +1,4 @@
+import { Paths } from '@/app/paths'
 import Link from 'next/link'
 
 export const HeroBanner = () => {
@@ -10,7 +11,7 @@ export const HeroBanner = () => {
         mentoringiem
       </p>
       <Link
-        href=""
+        href={Paths.MENTORS}
         className="m-auto mb-12 block w-[180px] rounded-xl bg-secondary py-[14px] text-center text-14px font-[600] text-base000"
       >
         Znajdź mentora

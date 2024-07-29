@@ -7,12 +7,16 @@ import {
   Reviews,
 } from '@/app/_components'
 
-export default function HomePage() {
+type HomePageType = {
+  readonly searchParams: { [key: string]: string | string[] }
+}
+export default function HomePage({ searchParams }: HomePageType) {
+  const currentCategory = searchParams.cat?.toString() ?? ''
   return (
     <>
       <HeroBanner />
       <Features />
-      <MentorsList />
+      <MentorsList currentCategory={currentCategory}/>
       <Reviews />
       <Faq />
       <CtaBanner />
