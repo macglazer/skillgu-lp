@@ -1,6 +1,8 @@
+import { Route } from 'next'
 import Link from 'next/link'
-import clx from 'classnames'
 import { MouseEventHandler } from 'react'
+import clx from 'classnames'
+
 import { Paths } from '@/app/paths'
 
 const navLinks = [
@@ -29,7 +31,7 @@ export const Navigation = ({
           <li key={item.id} onClick={onClick}>
             <Link
               className="text-14px font-medium text-base800"
-              href={item.href}
+              href={item.href as Route}
             >
               {item.name}
             </Link>
@@ -38,13 +40,13 @@ export const Navigation = ({
       </ul>
       <div className="flex flex-col gap-3 lg:flex-row">
         <Link
-          href=""
+          href={Paths.REGISTER}
           className="rounded-full bg-secondaryLight px-4 py-10px text-center text-14px font-semibold text-secondary"
         >
           Zostań Mentorem
         </Link>
         <Link
-          href=""
+          href={Paths.LOGIN}
           className="rounded-full bg-secondary px-8 py-10px text-center text-14px font-semibold text-base000"
         >
           Zaloguj się

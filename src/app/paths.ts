@@ -6,8 +6,11 @@ export enum Paths {
   CONTACT = '/contact',
   POLICY = '/policy',
   TERMS = '/terms',
-  FACEBOOK = '',
-  INSTAGRAM = '',
-  LINKEDIN = '',
-  YOUTUBE = '',
+  FACEBOOK = '/',
+  INSTAGRAM = '/',
+  LINKEDIN = '/',
+  YOUTUBE = '/',
+  LOGIN= '/',
+  LOGINASMENTEE= '/',
+  REGISTER='/'
 }
