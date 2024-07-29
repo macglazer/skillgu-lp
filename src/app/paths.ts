@@ -1,7 +1,7 @@
 export enum Paths {
   HOME = '/',
   ABOUT = '/about',
-  MENTORS = '',
+  MENTORS = '/',
   FAQ = '/#faq',
   CONTACT = '/contact',
   POLICY = '/policy',
