@@ -43,11 +43,11 @@ export const MentorCard = ({
       <div>
         <div className="mb-1 flex items-center justify-between">
           <h4 className="text-14px font-semibold">{name}</h4>
-          <div className="flex items-center justify-between gap-1 text-xs">
+          {reviewsCount ? <div className="flex items-center justify-between gap-1 text-xs">
             <Star />
             <p className="font-semibold">{reviewsAvgRate}</p>
             <p className="font-medium text-base600">{`(${reviewsCount} ${getReviewText(reviewsCount)})`}</p>
-          </div>
+          </div>: null}
         </div>
         <p className="text-xs font-medium leading-5 text-base600">{title}</p>
       </div>
