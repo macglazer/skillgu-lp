@@ -41,7 +41,7 @@ export const MentorsList = async ({
   return (
     <section className="m-auto flex w-full max-w-xl flex-col gap-10 p-[44px] px-5 md:max-w-fit lg:max-w-[1304px]">
       <div>
-        <h3 className="mb-4 text-center text-xl font-bold leading-[26px] lg:text-32px lg:leading-[48px]">
+        <h3 className="mb-4 text-center text-[28px] font-bold leading-[42px] lg:text-32px lg:leading-[48px]">
           {`100+ mentorów w ${categories.length} kategoriach`}
         </h3>
         <p className="m-auto max-w-2xl p-3 text-center text-[14px] font-medium leading-6 text-base600 lg:text-base lg:leading-7">
