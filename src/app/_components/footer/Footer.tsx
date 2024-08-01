@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
 import { Navigation } from './Navigation'
-import { Logo } from '@/app/ui/icons/Logo'
-import { Facebook } from '@/app/ui/icons/Facebook'
-import { Linkedin } from '@/app/ui/icons/Linkedin'
-import { Instagram } from '@/app/ui/icons/Instagram'
-import { Youtube } from '@/app/ui/icons/Youtube'
+import { Logo } from '@/ui/icons/Logo'
+import { Facebook } from '@/ui/icons/Facebook'
+import { Linkedin } from '@/ui/icons/Linkedin'
+import { Instagram } from '@/ui/icons/Instagram'
+import { Youtube } from '@/ui/icons/Youtube'
 
 import { Paths } from '@/app/paths'
 
