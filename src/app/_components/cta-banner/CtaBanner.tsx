@@ -17,9 +17,7 @@ export const CtaBanner = () => {
         <div className={clx('items-cent flex flex-col gap-3 md:flex-row')}>
           <a
             href={Paths.REGISTER}
-            className={clx(
-              'text-14 rounded-full bg-secondary px-32px py-10px text-center font-semibold text-white',
-            )}
+            className={clx('link-primary-rounded text-14 px-32px py-10px')}
           >
             Zostań mentorem
           </a>

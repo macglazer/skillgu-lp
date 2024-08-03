@@ -47,7 +47,7 @@ export const Navigation = ({
         </Link>
         <Link
           href={Paths.LOGIN}
-          className="rounded-full bg-secondary px-8 py-10px text-center text-14px font-semibold text-base000"
+          className="link-primary-rounded px-8 py-10px text-14px"
         >
           Zaloguj się
         </Link>

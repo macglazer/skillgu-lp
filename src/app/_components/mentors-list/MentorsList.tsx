@@ -83,7 +83,7 @@ export const MentorsList = async ({
       </div>
       <Link
         href={Paths.MENTORS}
-        className="m-auto block rounded-xl bg-secondary px-8 py-[14px] text-center text-base font-[600] text-base000"
+        className="link-primary m-auto block px-8 py-[14px] text-base font-[600]"
       >
         Pokaż wszystkich mentorów
       </Link>
