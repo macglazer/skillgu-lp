@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Paths } from '@/app/paths'
+import { Route } from 'next'
 
 const navLinks = [
   { name: 'O nas', id: 'about', href: Paths.ABOUT },
@@ -18,7 +19,7 @@ export const Navigation = () => {
           <li key={item.id}>
             <Link
               className="text-xs font-medium text-base600 lg:text-14px"
-              href={item.href}
+              href={item.href as Route}
             >
               {item.name}
             </Link>
