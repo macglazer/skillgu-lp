@@ -12,5 +12,6 @@ export enum Paths {
   YOUTUBE = '/',
   LOGIN= '/',
   LOGINASMENTEE= '/',
-  REGISTER='/'
+  REGISTER='/',
+  REGISTERASMENTEE='/'
 }
