@@ -31,7 +31,7 @@ export const InputText = ({
         id={name}
         name={name}
         type={type}
-        className="block w-full rounded-lg border border-base400 p-3 text-base600 outline-none"
+        className={`block w-full rounded-lg border border-base400 p-3 text-14px text-base600 outline-none ${tag === 'textarea' ? 'h-[190px]' : ''}`}
         required={required}
       />
     </div>
