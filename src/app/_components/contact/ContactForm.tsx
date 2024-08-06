@@ -1,16 +1,17 @@
-// 'use client'
+'use client'
 
-import { sendMessage } from '@/services/sendMessage'
+import { useRef } from 'react'
+
 import { InputText } from '@/ui/InputText'
 import { RadioField } from '@/ui/RadioField/RadioField'
-import { notFound } from 'next/navigation'
-import { useRef } from 'react'
-import { useFormStatus } from 'react-dom'
 
 export const ContactForm = ({
   createAndSendMessage,
 }: {
-  createAndSendMessage: (formData: FormData) => Promise<boolean>
+  createAndSendMessage: (formData: FormData) => Promise<{
+    isSuccess: boolean
+    message?: string
+  }>
 }) => {
   const contactTypes = [
     { id: '1', contactType: 'error', label: 'Błędu strony' },
@@ -19,32 +20,15 @@ export const ContactForm = ({
     { id: '4', contactType: 'other', label: 'Inne' },
   ]
 
-  //const ref = useRef<HTMLFormElement>(null)
+  const ref = useRef<HTMLFormElement>(null)
 
-  const createAndSendMessagee = async (formData: FormData) => {
-    'use server'
-
-    try {
-      const data = {
-        email: formData.get('email') as string,
-        name: formData.get('name') as string,
-        message: formData.get('message') as string,
-        contactType: formData.get('contactType') as
-          | 'error'
-          | 'suggestion'
-          | 'collaboration'
-          | 'other',
-      }
-      const response = await sendMessage(data)
-
-      formData.set('email', '')
-    } catch (err) {
-      return notFound()
-    }
+  const submitAction = async (formData: FormData) => {
+    const response = await createAndSendMessage(formData)
+    if (response.isSuccess) ref.current?.reset()
   }
 
   return (
-    <form action={createAndSendMessagee}>
+    <form ref={ref} action={submitAction}>
       <div className="mb-6 flex w-full flex-col gap-8 md:flex-row">
         <InputText label="Twój e-mail" name="email" type="email" required />
         <InputText label="Twoje imię" name="name" required />

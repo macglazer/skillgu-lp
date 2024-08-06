@@ -8,7 +8,7 @@ export const RadioField = ({
   name: string
 }) => {
   return (
-    <label className="flex items-center gap-3" htmlFor={value}>
+    <label className="flex items-center gap-3 text-base800 text-14px font-medium" htmlFor={value}>
       <input
         type="radio"
         value={value}
