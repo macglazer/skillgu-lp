@@ -38,6 +38,9 @@ const config: Config = {
         '100.8px': '100.8px', // cta-banner
         '72px': '72px', // cta-banner
       },
+      boxShadow: {
+        'radio': '0 0 0 1px #252B61',
+      },
       colors: {
         primary: '#252B61',
         secondary: '#FF6A3D',

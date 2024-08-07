@@ -10,4 +10,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .link-primary-rounded {
+    @apply rounded-full bg-secondary text-center font-semibold text-base000;
+  }
+  .link-primary {
+    @apply rounded-xl bg-secondary text-center font-semibold text-base000;
+  }
 }
