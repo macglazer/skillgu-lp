@@ -33,7 +33,7 @@ export const MentorCard = ({
   return (
     <div className="m-auto flex max-w-md flex-col gap-3 rounded-3xl border border-base200 p-5">
       <div className="relative">
-        <ProfileImage alt={`${name} profile image`} src={avatar_url} />
+        <ProfileImage alt={`${name} profile image`} src={avatar_url} className="max-h-[200px] w-full"/>
         {special ? (
           <p className="absolute left-2 top-2 rounded-3xl bg-success200 px-4 py-1 text-xs font-semibold text-success100">
             {special}

@@ -18,7 +18,7 @@ export const ProfileImage = ({
         width={320}
         height={200}
         className={clx(
-          'h-[200px] w-full rounded-[20px] object-cover object-center',
+          'rounded-[20px] object-cover object-center',
           className,
         )}
       />

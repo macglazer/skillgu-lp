@@ -8,16 +8,21 @@ import {
 } from '@/app/_components'
 
 type HomePageType = {
-  readonly searchParams: { [key: string]: string | string[] }
+  readonly searchParams: {
+    cat: string
+    reviewId: string
+  }
 }
 export default function HomePage({ searchParams }: HomePageType) {
   const currentCategory = searchParams.cat?.toString() ?? ''
+  const reviewId = searchParams?.reviewId?.toString() ?? ''
+
   return (
     <>
       <HeroBanner />
       <Features />
-      <MentorsList currentCategory={currentCategory}/>
-      <Reviews />
+      <MentorsList currentCategory={currentCategory} />
+      <Reviews reviewId={reviewId} />
       <Faq />
       <CtaBanner />
     </>
