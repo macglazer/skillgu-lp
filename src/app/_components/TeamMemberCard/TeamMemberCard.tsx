@@ -5,7 +5,7 @@ import { Linkedin } from '@/ui/icons/Linkedin'
 import { Skillgu } from '@/ui/icons/Skillgu'
 import { ProfileImage } from '@/ui/ProfileImage'
 
-import { Member } from '@/services/fetchAllMembers'
+import { Member } from '@/services/fetchTeamMembers'
 
 export const TeamMemberCard = ({
   avatar_url,

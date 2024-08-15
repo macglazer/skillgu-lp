@@ -1,8 +1,8 @@
 import { TeamMemberCard } from '../_components/TeamMemberCard'
-import { fetchAllMembers, Member } from '@/services/fetchAllMembers'
+import { fetchTeamMembers, Member } from '@/services/fetchTeamMembers'
 
 const About = async () => {
-  const { members } = await fetchAllMembers()
+  const { members } = await fetchTeamMembers()
 
   if (!members) return
 

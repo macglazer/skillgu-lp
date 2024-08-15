@@ -20,7 +20,7 @@ export type Member = {
   }
 }
 
-export const fetchAllMembers = async (): Promise<ResponseData> => {
+export const fetchTeamMembers = async (): Promise<ResponseData> => {
   try {
     // TODO
     //     const response = await axios.get(
