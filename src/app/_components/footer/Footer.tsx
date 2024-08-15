@@ -11,7 +11,7 @@ import { Paths } from '@/app/paths'
 
 export const Footer = () => {
   return (
-    <footer className="m-auto flex max-w-[1304px] flex-col gap-6 px-5 pb-10 pt-12 md:gap-[72px] lg:pt-88px">
+    <footer className="m-auto flex w-full max-w-[1304px] flex-col gap-6 px-5 pb-10 pt-12 md:gap-[72px] lg:pt-88px">
       <div className="flex flex-col justify-between gap-6 md:flex-row">
         <div className="flex max-w-96 flex-col gap-[25px] pr-5">
           <Logo />
