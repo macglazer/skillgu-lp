@@ -1,6 +1,7 @@
-import { Download } from '@/ui/icons/Download'
-import { notFound } from 'next/navigation'
 import { type ComponentType } from 'react'
+import { notFound } from 'next/navigation'
+
+import { Download } from '@/ui/icons/Download'
 
 export default async function StaticPage({
   params,
@@ -12,30 +13,30 @@ export default async function StaticPage({
     () => notFound(),
   )
 
-  const title = {
-    policy: 'Polityka prywatności',
-    terms: 'Regulamin',
+  const pages = {
+    policy: {
+      title: 'Polityka prywatności',
+      path: '/terms.pdf',
+    },
+    terms: { title: 'Regulamin', path: '/terms.pdf' },
   }
 
-  console.log(params.filename)
+  if (params.filename !== 'policy' && params.filename !== 'terms') return
+  
   return (
     <article className="m-auto flex max-w-xl flex-col gap-10 px-5 py-[44px] text-primary md:max-w-fit lg:max-w-[1304px] lg:flex-row">
       <div>
         <h3 className="text-[28px] font-bold tracking-[-1px] lg:text-5xl lg:leading-[72px] lg:tracking-[-2px]">
-          {params.filename === 'policy' || params.filename === 'terms'
-            ? title[params.filename]
-            : null}
+          {pages[params.filename].title}
         </h3>
-        {params.filename === 'terms' ? (
-          <a
-            href="/terms.pdf"
-            download
-            className="link-primary-rounded mt-8 hidden w-60 items-center justify-between px-8 py-10px text-14px lg:flex"
-          >
-            <p className="leading-[25.2px]">Pobierz regulamin</p>
-            <Download />
-          </a>
-        ) : null}
+        <a
+          href={pages[params.filename].path}
+          download
+          className="link-primary-rounded mt-8 hidden w-fit items-center justify-between px-10 py-10px text-14px lg:flex lg:gap-4"
+        >
+          <p className="leading-[25.2px]">Pobierz</p>
+          <Download />
+        </a>
       </div>
 
       <Content />
