@@ -1,5 +1,4 @@
 import { Download } from '@/ui/icons/Download'
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { type ComponentType } from 'react'
 
