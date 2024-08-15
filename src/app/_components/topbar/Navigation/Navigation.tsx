@@ -9,7 +9,6 @@ const navLinks = [
   { name: 'Strona główna', id: 'home', href: Paths.HOME },
   { name: 'O nas', id: 'about', href: Paths.ABOUT },
   { name: 'Lista mentorów', id: 'mentors', href: Paths.MENTORS },
-  { name: 'Blog', id: 'blog', href: Paths.BLOG },
   { name: 'FAQ', id: 'faq', href: Paths.FAQ },
 ]
 
