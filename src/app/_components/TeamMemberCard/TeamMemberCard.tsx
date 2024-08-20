@@ -10,14 +10,12 @@ import { Member } from '@/services/fetchTeamMembers'
 export const TeamMemberCard = ({
   avatar_url,
   description,
-  id,
   name,
   title,
-  username,
   socials,
 }: Member) => {
   return (
-    <div className="m-auto flex max-w-md flex-col gap-3 rounded-3xl lg:m-0">
+    <article className="m-auto flex max-w-md flex-col gap-3 rounded-3xl md:m-0">
       <div>
         <ProfileImage
           alt={`${name} profile image`}
@@ -54,6 +52,6 @@ export const TeamMemberCard = ({
       <p className="text-14px font-medium leading-[25.2px] text-base600 lg:text-base lg:leading-7">
         {description}
       </p>
-    </div>
+    </article>
   )
 }

@@ -18,9 +18,10 @@ export const Features = () => {
         </div>
         <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
           <Image
+            className="rounded-t-[12px]"
             width={700}
             height={700}
-            src="/session.png"
+            src="/session1.png"
             alt="Mentor profile page"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
