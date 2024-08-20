@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import { Paths } from '@/app/paths'
 import { Route } from 'next'
+import clx from 'classnames'
+
+import { Paths } from '@/app/paths'
 
 const navLinks = [
   { name: 'O nas', id: 'about', href: Paths.ABOUT },
@@ -10,9 +12,14 @@ const navLinks = [
   { name: 'Kontakt', id: 'contact', href: Paths.CONTACT },
 ]
 
-export const Navigation = () => {
+export const Navigation = ({ className }: { className?: string }) => {
   return (
-    <nav className="mr-5 flex w-60 max-w-full flex-col justify-between gap-4 lg:gap-6">
+    <nav
+      className={clx(
+        'mr-5 flex w-60 max-w-full flex-col gap-4 lg:gap-6',
+        className,
+      )}
+    >
       <p className="text-base font-semibold text-primary lg:text-lg">Linki</p>
       <ul className="flex flex-col gap-3 lg:gap-5">
         {navLinks.map((item) => (
