@@ -33,7 +33,9 @@ export const TeamMemberCard = ({
               <Link
                 href={socials.skillgu as Route}
                 aria-label="go to Skillgu gprofile"
-              ><Skillgu /></Link>
+              >
+                <Skillgu />
+              </Link>
             ) : null}
             {socials.linkedin ? (
               <Link
@@ -49,7 +51,7 @@ export const TeamMemberCard = ({
           {title}
         </p>
       </div>
-      <p className="text-14px font-medium leading-[25.2px] text-base600 lg:text-base lg:leading-7">
+      <p className="text-14px font-medium leading-[25px] text-base600 lg:text-base lg:leading-7">
         {description}
       </p>
     </article>

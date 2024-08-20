@@ -21,6 +21,7 @@ export const Features = () => {
             className="rounded-t-[12px]"
             width={700}
             height={700}
+            loading="lazy"
             src="/session1.png"
             alt="Mentor profile page"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -43,6 +44,7 @@ export const Features = () => {
             width={700}
             height={700}
             src="/calendar.png"
+            loading="lazy"
             alt="Picture of app caledar"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
@@ -64,6 +66,7 @@ export const Features = () => {
           <Image
             width={700}
             height={700}
+            loading="lazy"
             src="/chat.png"
             alt="Picture of chat history"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

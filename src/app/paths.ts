@@ -2,6 +2,7 @@ export enum Paths {
   HOME = '/',
   ABOUT = '/about',
   MENTORS = '/',
+  MENTORPROFILE = '/mentor',
   BLOG = '/blog',
   FAQ = '/#faq',
   CONTACT = '/contact',
