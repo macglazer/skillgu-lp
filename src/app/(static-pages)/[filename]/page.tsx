@@ -22,7 +22,7 @@ export default async function StaticPage({
   }
 
   if (params.filename !== 'policy' && params.filename !== 'terms') return
-  
+
   return (
     <article className="m-auto flex max-w-xl flex-col gap-10 px-5 py-[44px] text-primary md:max-w-fit lg:max-w-[1304px] lg:flex-row">
       <div>

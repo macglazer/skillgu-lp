@@ -12,8 +12,8 @@ export enum Paths {
   INSTAGRAM = '/',
   LINKEDIN = '/',
   YOUTUBE = '/',
-  LOGIN= '/',
-  LOGINASMENTEE= '/',
-  REGISTER='/',
-  REGISTERASMENTEE='/'
+  LOGIN = '/',
+  LOGINASMENTEE = '/',
+  REGISTER = '/',
+  REGISTERASMENTEE = '/',
 }

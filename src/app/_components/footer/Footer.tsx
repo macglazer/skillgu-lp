@@ -19,10 +19,10 @@ export const Footer = () => {
           <p className="text-14px font-medium leading-[25px] text-base600">
             Skillgu to miejsce, gdzie możesz znaleźć swojego następnego mentora.
           </p>
-          <Company className="hidden md:block"/>
+          <Company className="hidden md:block" />
         </div>
         <Navigation />
-        <Company className="md:hidden"/>
+        <Company className="md:hidden" />
       </div>
       <div className="flex flex-col justify-between gap-6 md:flex-row-reverse">
         <ul className="flex gap-5">

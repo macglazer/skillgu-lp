@@ -30,8 +30,19 @@ export const ContactForm = ({
   return (
     <form ref={ref} action={submitAction}>
       <div className="mb-6 flex w-full flex-col gap-8 md:flex-row">
-        <InputText label="Twój e-mail" name="email" type="email" required />
-        <InputText label="Twoje imię" name="name" required />
+        <InputText
+          label="Twój e-mail"
+          name="email"
+          type="email"
+          placeholder="np: jankowalski@skullgu.com"
+          required
+        />
+        <InputText
+          label="Twoje imię"
+          name="name"
+          placeholder="np: Jan Kowalski"
+          required
+        />
       </div>
       <div className="mb-8 w-full">
         <p className="mb-3 block text-14px font-semibold leading-6">
@@ -49,7 +60,13 @@ export const ContactForm = ({
         </div>
       </div>
       <div className="mb-8">
-        <InputText tag="textarea" label="Wiadomość" name="message" required />
+        <InputText
+          tag="textarea"
+          label="Wiadomość"
+          name="message"
+          placeholder="Treść wiadomości"
+          required
+        />
       </div>
       <button
         type="submit"

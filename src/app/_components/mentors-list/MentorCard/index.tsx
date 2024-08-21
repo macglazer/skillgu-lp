@@ -1,1 +1,1 @@
-export * from './MentorCard';
+export * from './MentorCard'

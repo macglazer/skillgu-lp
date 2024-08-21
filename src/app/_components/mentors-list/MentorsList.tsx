@@ -63,7 +63,7 @@ export const MentorsList = async ({
         ))}
       </div>
 
-      <div className="grid grid-cols-1 gap-x-4 gap-y-10 md:grid-cols-2 xl:grid-cols-4 justify-center w-fit m-auto">
+      <div className="m-auto grid w-fit grid-cols-1 justify-center gap-x-4 gap-y-10 md:grid-cols-2 xl:grid-cols-4">
         {mentors?.map((item: Mentor) => (
           <MentorCard
             key={item.id}
