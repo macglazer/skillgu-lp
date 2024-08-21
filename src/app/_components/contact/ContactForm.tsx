@@ -1,33 +1,31 @@
-"use client";
+'use client'
 
-import { useRef } from "react";
+import { useRef } from 'react'
 
-import { InputText } from "@/ui/InputText";
-import { RadioField } from "@/ui/RadioField/RadioField";
+import { InputText } from '@/ui/InputText'
+import { RadioField } from '@/ui/RadioField/RadioField'
 
 export const ContactForm = ({
   createAndSendMessage,
 }: {
-  createAndSendMessage: (
-    formData: FormData
-  ) => Promise<{
-    isSuccess: boolean;
-    message?: string;
-  }>;
+  createAndSendMessage: (formData: FormData) => Promise<{
+    isSuccess: boolean
+    message?: string
+  }>
 }) => {
   const contactTypes = [
-    { id: "1", contactType: "error", label: "Błędu strony" },
-    { id: "2", contactType: "suggestion", label: "Sugestia poprawy czegoś" },
-    { id: "3", contactType: "collaboration", label: "Propozycja współpracy" },
-    { id: "4", contactType: "other", label: "Inne" },
-  ];
+    { id: '1', contactType: 'error', label: 'Błędu strony' },
+    { id: '2', contactType: 'suggestion', label: 'Sugestia poprawy czegoś' },
+    { id: '3', contactType: 'collaboration', label: 'Propozycja współpracy' },
+    { id: '4', contactType: 'other', label: 'Inne' },
+  ]
 
-  const ref = useRef<HTMLFormElement>(null);
+  const ref = useRef<HTMLFormElement>(null)
 
   const submitAction = async (formData: FormData) => {
-    const response = await createAndSendMessage(formData);
-    if (response.isSuccess) ref.current?.reset();
-  };
+    const response = await createAndSendMessage(formData)
+    if (response.isSuccess) ref.current?.reset()
+  }
 
   return (
     <form ref={ref} action={submitAction}>
@@ -77,5 +75,5 @@ export const ContactForm = ({
         Wyślij wiadomość
       </button>
     </form>
-  );
-};
+  )
+}

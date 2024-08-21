@@ -4,7 +4,7 @@ const Blog = async () => {
       <h3 className="semibold text-[28px] font-bold leading-[42px] lg:text-[48px] lg:leading-[72px]">
         Blog
       </h3>
-       <p className='text-lg text-base800 font-medium'>Strona w budowie</p>
+      <p className="text-lg font-medium text-base800">Strona w budowie</p>
     </section>
   )
 }
