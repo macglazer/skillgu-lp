@@ -23,7 +23,7 @@ export const ReviewCard = ({ review, modal }: ReviewCardPropType) => {
           src={mentor.avatar_url}
         />
         <div>
-          <h4 className="mb-2 text-14px font-semibold leading-[25.2px]">
+          <h4 className="mb-2 text-14px font-semibold leading-[25px]">
             Opinia o {mentor.name}
           </h4>
           <p className="text-xs font-medium leading-5 text-base600">
@@ -36,7 +36,7 @@ export const ReviewCard = ({ review, modal }: ReviewCardPropType) => {
       >
         <div className="mb-3 flex items-center gap-3">
           <p
-            className={` ${modal ? 'text-lg' : 'text-14px'} font-semibold leading-[25.2px]`}
+            className={` ${modal ? 'text-lg' : 'text-14px'} font-semibold leading-[25px]`}
           >
             {`${authorName} ocenił(a) na`}
           </p>

@@ -39,7 +39,7 @@ const config: Config = {
         '72px': '72px', // cta-banner
       },
       boxShadow: {
-        'radio': '0 0 0 1px #252B61',
+        radio: '0 0 0 1px #252B61',
       },
       colors: {
         primary: '#252B61',
@@ -57,11 +57,6 @@ const config: Config = {
         warning100: '#FCA004',
         warning200: '#FFFBED',
         'white-11': 'rgba(255, 255, 255, 0.11)',
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },

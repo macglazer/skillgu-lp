@@ -18,9 +18,11 @@ export const Features = () => {
         </div>
         <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
           <Image
+            className="rounded-t-[12px]"
             width={700}
             height={700}
-            src="/session.png"
+            loading="lazy"
+            src="/session1.png"
             alt="Mentor profile page"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
@@ -42,6 +44,7 @@ export const Features = () => {
             width={700}
             height={700}
             src="/calendar.png"
+            loading="lazy"
             alt="Picture of app caledar"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
@@ -63,6 +66,7 @@ export const Features = () => {
           <Image
             width={700}
             height={700}
+            loading="lazy"
             src="/chat.png"
             alt="Picture of chat history"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
