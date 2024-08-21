@@ -1,9 +1,15 @@
-import { Paths } from '@/app/paths'
-import Link from 'next/link'
-import clx from 'classnames'
+import React, { Suspense } from "react";
+import { Paths } from "@/app/paths";
+import Link from "next/link";
+import clx from "classnames";
+import { alcatra } from "@/app/fonts";
+import { ValueBox } from "@/ui/valueBox";
 
-import { alcatra } from '@/app/fonts'
-import { ValueBox } from '@/ui/valueBox'
+const HeroBannerVideo = React.lazy(() =>
+  import("./HeroBannerVideo").then((module) => ({
+    default: module.HeroBannerVideo,
+  }))
+);
 
 export const HeroBanner = () => {
   return (
@@ -35,14 +41,15 @@ export const HeroBanner = () => {
       <div className="m-auto max-w-3xl px-5 py-24">
         <h3 className="hidden">Skillgu home page</h3>
         <p className="mb-8 w-full text-center text-32px font-bold leading-[48px] tracking-[-1px] text-primary lg:text-48px lg:leading-72px lg:tracking-[-2px]">
-          Osiągaj swoje cele szybciej z <span
+          Osiągaj swoje cele szybciej z{" "}
+          <span
             className={clx(
               alcatra.className,
-              'font-semibold italic tracking-wide text-secondary',
+              "font-semibold italic tracking-wide text-secondary"
             )}
           >
             1:1
-          </span>{' '}
+          </span>{" "}
           mentoringiem
         </p>
         <Link
@@ -51,8 +58,10 @@ export const HeroBanner = () => {
         >
           Znajdź mentora
         </Link>
-        <div className="h-[407px] rounded-3xl border"></div>
+        <Suspense fallback={<div className="h-[407px] rounded-3xl border" />}>
+          <HeroBannerVideo />
+        </Suspense>
       </div>
     </section>
-  )
-}
+  );
+};
