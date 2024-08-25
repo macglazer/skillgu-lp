@@ -19,8 +19,8 @@ export const Features = () => {
         <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
           <Image
             className="rounded-t-[12px]"
-            width={700}
-            height={700}
+            width={449}
+            height={302}
             loading="lazy"
             src="/session1.png"
             alt="Mentor profile page"
@@ -41,8 +41,8 @@ export const Features = () => {
         </div>
         <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
           <Image
-            width={700}
-            height={700}
+            width={449}
+            height={302}
             src="/calendar.png"
             loading="lazy"
             alt="Picture of app caledar"
@@ -64,8 +64,8 @@ export const Features = () => {
         </div>
         <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
           <Image
-            width={700}
-            height={700}
+            width={449}
+            height={302}
             loading="lazy"
             src="/chat.png"
             alt="Picture of chat history"
