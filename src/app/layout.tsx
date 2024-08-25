@@ -1,9 +1,7 @@
 import type { Metadata } from 'next'
 import { GoogleTagManager } from '@next/third-parties/google'
-import { Montserrat } from 'next/font/google'
+import { montserrat } from '@/app/fonts'
 import './globals.css'
-
-const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Skillgu',
@@ -15,10 +13,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-
   return (
-    <html lang="pl">
-      <body className={montserrat.className}>{children}</body>
+    <html lang="pl" className={montserrat.className}>
+      <body>{children}</body>
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GA_ID as string} />
     </html>
   )
