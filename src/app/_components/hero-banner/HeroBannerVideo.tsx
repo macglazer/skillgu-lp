@@ -18,7 +18,7 @@ export const HeroBannerVideo = () => {
     <div className="h-[407px] rounded-3xl border">
       <YouTube
         className={clx('h-full w-full rounded-3xl', styles.yt)}
-        videoId="ScMzIvxBSi4"
+        videoId="YaBVqgA4VOU"
         opts={opts}
       />
     </div>
