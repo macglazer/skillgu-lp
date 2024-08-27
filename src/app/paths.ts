@@ -12,9 +12,9 @@ export enum Paths {
   INSTAGRAM = '/',
   LINKEDIN = '/',
   YOUTUBE = '/',
-  LOGIN = '/',
+  LOGIN = 'https://test.skillgu.com/auth/login',
   LOGINASMENTEE = '/',
-  REGISTER = '/',
+  REGISTER = 'https://test.skillgu.com/register-mentor',
   REGISTERASMENTEE = '/',
-  MENTORLIST = '/',
+  MENTORLIST = 'https://test.skillgu.com/search-mentors',
 }

@@ -36,9 +36,9 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         description:
           'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur.',
         id: '1',
-        name: 'Anna Stokrotka',
-        title: 'CEO Skillguru',
-        username: 'anna_stokrotka',
+        name: 'Maciej Glazer',
+        title: 'CEO Skillgu',
+        username: 'mac_glaz',
         socials: {
           skillgu: 'https://www.skillgu.com/',
           linkedin: 'https://www.linkedin.com/',
@@ -50,12 +50,12 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         description:
           'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur. lorem ipsum dolor sit amet consectetur',
         id: '2',
-        name: 'Radek Maj',
-        title: 'Frontend Developer',
-        username: 'rob_maj',
+        name: 'Artur Barański',
+        title: 'Co-Founder',
+        username: 'art_baranski',
         socials: {
           skillgu: '',
-          linkedin: 'https://www.linkedin.com/',
+          linkedin: 'https://www.linkedin.com/in/artur-baranski/',
         },
       },
       {
@@ -64,9 +64,9 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         description:
           'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur.',
         id: '3',
-        name: 'Radek Maj',
-        title: 'Frontend Developer',
-        username: 'rob_maj',
+        name: 'Artur Dudzik',
+        title: 'CTO',
+        username: 'dudziassoo',
         socials: {
           skillgu: '',
           linkedin: 'https://www.linkedin.com/',
@@ -76,44 +76,46 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         avatar_url:
           'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
         description:
-          'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur.',
+          'Front-end Developer.\n' +
+            'Technologies: \n' +
+            'HTML, CSS, RWD, JavaScript, TypeScript, FetchAPI, Next.js, React, Redux, React Testing Library, narzędzia Git, GitHub, GitLab, Webpack, Jira.',
         id: '4',
-        name: 'Jan Mus',
+        name: 'Małgorzata Kowacka',
         title: 'Frontend Developer',
-        username: 'rob_maj',
+        username: 'gosia_kow',
         socials: {
           skillgu: '',
-          linkedin: 'https://www.linkedin.com/',
+          linkedin: 'https://www.linkedin.com/in/malgorzata-kowacka/',
         },
       },
       {
         avatar_url:
           'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
         description:
-          'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur.',
+          'Jestem Front Developerm z 10-letnim doświadczeniem',
         id: '5',
-        name: 'Jan Mus',
-        title: 'Java Developer',
-        username: 'rob_maj',
+        name: 'Radosław Żaczkiewicz',
+        title: 'Senior React Developer',
+        username: 'rado_ms',
         socials: {
           skillgu: '',
-          linkedin: 'https://www.linkedin.com/',
+          linkedin: 'https://www.linkedin.com/in/rados%C5%82aw-%C5%BCaczkiewicz-2534251bb/',
         },
       },
-      {
-        avatar_url:
-          'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
-        description:
-          'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur.',
-        id: '6',
-        name: 'Jan Mus',
-        title: 'Frontend Developer',
-        username: 'rob_maj',
-        socials: {
-          skillgu: '',
-          linkedin: 'https://www.linkedin.com/',
-        },
-      },
+      // {
+      //   avatar_url:
+      //     'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+      //   description:
+      //     'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur.',
+      //   id: '6',
+      //   name: 'Jan Mus',
+      //   title: 'Frontend Developer',
+      //   username: 'rob_maj',
+      //   socials: {
+      //     skillgu: '',
+      //     linkedin: 'https://www.linkedin.com/',
+      //   },
+      // },
     ]
     return {
       members,
