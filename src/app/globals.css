@@ -10,9 +10,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  .link-primary-rounded {
-    @apply rounded-full bg-secondary text-center font-semibold text-base000;
+
+  /* Klasa dla subtelnego przycisku „Zaloguj się” */
+  .link-subtle {
+    @apply text-14px font-medium text-base800 rounded-full text-center;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
   }
+
+  /* Klasa dla pomarańczowego przycisku „Zostań mentorem” */
+  .link-primary-rounded {
+    @apply rounded-full bg-secondary text-white text-center font-semibold;
+    padding: 10px 20px;
+  }
+
   .link-primary {
     @apply rounded-xl bg-secondary text-center font-semibold text-base000;
   }

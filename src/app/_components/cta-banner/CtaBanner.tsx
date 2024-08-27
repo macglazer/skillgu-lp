@@ -22,12 +22,12 @@ export const CtaBanner = () => {
             Zostań mentorem
           </a>
           <a
-            href={Paths.REGISTERASMENTEE}
+            href={Paths.MENTORLIST}
             className={clx(
               'text-14 rounded-full bg-white-11 px-32px py-10px text-center font-semibold text-white',
             )}
           >
-            Zostań uczniem
+            Znajdź mentora
           </a>
         </div>
       </div>

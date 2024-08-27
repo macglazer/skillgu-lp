@@ -6,11 +6,11 @@ import clx from 'classnames'
 import { Paths } from '@/app/paths'
 
 const navLinks = [
-  { name: 'Strona główna', id: 'home', href: Paths.HOME },
+  // { name: 'Strona główna', id: 'home', href: Paths.HOME },
   { name: 'O nas', id: 'about', href: Paths.ABOUT },
   { name: 'Lista mentorów', id: 'mentors', href: Paths.MENTORS },
-  { name: 'Blog', id: 'blog', href: Paths.BLOG },
-  { name: 'FAQ', id: 'faq', href: Paths.FAQ },
+  { name: 'Mój profil', id: 'login', href: Paths.LOGIN },
+  // { name: 'FAQ', id: 'faq', href: Paths.FAQ },
 ]
 
 export const Navigation = ({
@@ -40,17 +40,17 @@ export const Navigation = ({
         ))}
       </ul>
       <div className="flex flex-col gap-3 lg:flex-row">
+        {/*<Link*/}
+        {/*  href={Paths.LOGIN}*/}
+        {/*  className="link-primary-rounded px-8 py-10px text-14px"*/}
+        {/*>*/}
+        {/*  Zaloguj się*/}
+        {/*</Link>*/}
         <Link
-          href={Paths.REGISTER}
-          className="rounded-full bg-secondaryLight px-4 py-10px text-center text-14px font-semibold text-secondary"
+            href={Paths.MENTORLIST}
+            className="rounded-full bg-secondaryLight px-4 py-10px text-center text-14px font-semibold text-secondary"
         >
-          Zostań Mentorem
-        </Link>
-        <Link
-          href={Paths.LOGIN}
-          className="link-primary-rounded px-8 py-10px text-14px"
-        >
-          Zaloguj się
+          Znajdź mentora
         </Link>
       </div>
     </nav>

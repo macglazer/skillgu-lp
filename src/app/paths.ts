@@ -16,4 +16,5 @@ export enum Paths {
   LOGINASMENTEE = '/',
   REGISTER = '/',
   REGISTERASMENTEE = '/',
+  MENTORLIST = '/',
 }

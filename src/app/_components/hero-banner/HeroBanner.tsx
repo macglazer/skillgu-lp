@@ -41,16 +41,15 @@ export const HeroBanner = () => {
       <div className="m-auto max-w-3xl px-5 py-24">
         <h3 className="hidden">Skillgu home page</h3>
         <p className="mb-8 w-full text-center text-32px font-bold leading-[48px] tracking-[-1px] text-primary lg:text-48px lg:leading-72px lg:tracking-[-2px]">
-          Osiągaj swoje cele szybciej z{' '}
+            Mentoring to{' '}
           <span
             className={clx(
               alcatra.className,
               'font-semibold italic tracking-wide text-secondary',
             )}
-          >
-            1:1
+          >6 razy większa,
           </span>{' '}
-          mentoringiem
+            szansa na awans i stabilne źródło dochodu
         </p>
         <Link
           href={Paths.MENTORS}
