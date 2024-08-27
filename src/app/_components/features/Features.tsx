@@ -8,11 +8,12 @@ export const Features = () => {
             <div className="md:flex">
                 <div className="mb-10 md:mb-0 md:w-1/2 md:pr-[76px]">
                     <p className="mb-4 text-xl font-bold leading-[26px] lg:text-32px lg:leading-[48px]">
-                        Baza wiedzy i doświadczenia
+                        Twój Profil Mentora
                     </p>
                     <p className="text-[14px] font-medium leading-6 text-base600 lg:text-base lg:leading-7">
-                        Przejrzysta wyszukiwarka pozwoli Ci szybko znaleźć odpowiedniego mentora i rozpocząć naukę, aby
-                        podnieść swoje kwalifikacje, zmienić pracę lub zarabiać więcej.
+                        W profilu mentora prezentujesz swoje umiejętności, tematy, sesje mentoringowe oraz oceny od
+                        podopiecznych. To Twoja wizytówka, która pomaga zdobywać nowych mentee i budować reputację w
+                        społeczności.
                     </p>
                 </div>
                 <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
