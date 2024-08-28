@@ -10,6 +10,7 @@ const navLinks = [
   { name: 'O nas', id: 'about', href: Paths.ABOUT },
   { name: 'Lista mentorów', id: 'mentors', href: Paths.MENTORS },
   { name: 'Mój profil', id: 'login', href: Paths.LOGIN },
+  { name: 'Cennik', id: 'pricing', href: Paths.PRICING },
   // { name: 'FAQ', id: 'faq', href: Paths.FAQ },
 ]
 

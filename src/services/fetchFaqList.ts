@@ -9,35 +9,60 @@ const faqList: {
 }[] = [
   {
     id: '01',
-    title: 'Jak mogę się zarejestrować na stronie?',
+    title: 'Jak mogę założyć konto jako mentor?',
     description:
-      'Aby się zarejestrować, kliknij przycisk „Zarejestruj się” znajdujący się w prawym górnym rogu strony głównej. Następnie wypełnij formularz rejestracyjny swoimi danymi, takimi jak adres e-mail i hasło, i postępuj zgodnie z instrukcjami weryfikacji. Po zakończeniu procesu rejestracji otrzymasz e-mail z linkiem aktywacyjnym. Kliknij w link, aby aktywować swoje konto.',
+        'Aby założyć konto jako mentor, kliknij przycisk „Zarejestruj się” w prawym górnym rogu strony głównej, a następnie wybierz opcję „Zostań mentorem”. Wypełnij formularz swoimi danymi oraz informacjami o swoim doświadczeniu. Po zakończeniu procesu rejestracji Twoje konto zostanie zweryfikowane przez nasz zespół.',
   },
   {
     id: '02',
-    title: 'Czy mogę zmienić swoje hasło?',
+    title: 'Jak mogę znaleźć mentora odpowiadającego moim potrzebom?',
     description:
-      'Tak, zmiana hasła jest możliwa w każdej chwili. Aby to zrobić, zaloguj się na swoje konto, a następnie przejdź do sekcji „Ustawienia konta” lub „Moje konto”. Znajdziesz tam opcję „Zmień hasło”. Kliknij w nią i postępuj zgodnie z instrukcjami, aby ustawić nowe hasło. Zalecamy wybór silnego hasła, które zawiera kombinację liter, cyfr i symboli, aby zwiększyć bezpieczeństwo Twojego konta.',
+        'Aby znaleźć mentora, skorzystaj z naszej wyszukiwarki dostępnej na stronie głównej. Możesz filtrować mentorów według branży, doświadczenia, ocen oraz dostępności. Po znalezieniu odpowiedniego mentora możesz umówić się na pierwszą sesję.',
   },
   {
     id: '03',
-    title: 'Jak odstąpić od płatności?',
+    title: 'Jak przebiega proces umawiania się na sesję mentoringową?',
     description:
-      'Tak, zmiana hasła jest możliwa w każdej chwili. Aby to zrobić, zaloguj się na swoje konto, a następnie przejdź do sekcji „Ustawienia konta” lub „Moje konto”. Znajdziesz tam opcję „Zmień hasło”. Kliknij w nią i postępuj zgodnie z instrukcjami, aby ustawić nowe hasło. Zalecamy wybór silnego hasła, które zawiera kombinację liter, cyfr i symboli, aby zwiększyć bezpieczeństwo Twojego konta.',
+        'Po wybraniu mentora możesz umówić się na sesję poprzez kalendarz dostępny na jego profilu. Wybierz dogodny termin, a następnie potwierdź swoją rezerwację. Otrzymasz potwierdzenie e-mailowe z danymi dotyczącymi sesji.',
   },
   {
     id: '04',
-    title: 'Figma ipsum component variant main layer?',
+    title: 'Jakie są koszty korzystania z usług mentorów?',
     description:
-      'Figma ipsum component variant main layer. Vertical blur strikethrough font scale bold font. Shadow pixel fill arrow font style follower. Blur fill bold background opacity.',
+        'Koszty sesji z mentorami zależą od ich doświadczenia oraz długości trwania sesji. Szczegółowe informacje o cenach znajdziesz na profilu każdego mentora. Płatności dokonuje się z góry za pomocą bezpiecznego systemu płatności dostępnego na naszej platformie.',
   },
   {
     id: '05',
-    title: 'Figma ipsum component variant main layer?',
+    title: 'Czy mogę zmienić swojego mentora?',
     description:
-      'Figma ipsum component variant main layer. Vertical blur strikethrough font scale bold font. Shadow pixel fill arrow font style follower. Blur fill bold background opacity.',
+        'Tak, możesz zmienić mentora w każdej chwili. Jeśli po kilku sesjach stwierdzisz, że inny mentor lepiej odpowiada Twoim potrzebom, możesz przejść do jego profilu i umówić się na sesję. Wszelkie opłaty za niewykorzystane sesje z poprzednim mentorem mogą zostać przeniesione na nowego mentora, jeśli zostały wcześniej uzgodnione.',
   },
-]
+  {
+    id: '06',
+    title: 'Jak mogę zrezygnować z subskrypcji lub usunąć konto?',
+    description:
+        'Aby zrezygnować z subskrypcji lub usunąć konto, przejdź do sekcji „Ustawienia konta” i wybierz odpowiednią opcję. Po potwierdzeniu rezygnacji Twoje konto zostanie dezaktywowane, a wszystkie dane usunięte zgodnie z naszą polityką prywatności.',
+  },
+  {
+    id: '07',
+    title: 'Czy mogę mieć więcej niż jednego mentora?',
+    description:
+        'Tak, możesz współpracować z wieloma mentorami jednocześnie, szczególnie jeśli chcesz rozwijać się w różnych obszarach. Każdy mentor ma swoje unikalne umiejętności, które mogą przyczynić się do Twojego rozwoju zawodowego i osobistego.',
+  },
+  {
+    id: '08',
+    title: 'Jak mogę ocenić mojego mentora po zakończeniu sesji?',
+    description:
+        'Po zakończeniu sesji otrzymasz możliwość oceny mentora. Twoja opinia jest dla nas bardzo ważna i pomoże innym użytkownikom w wyborze odpowiedniego mentora. Ocenę możesz wystawić bezpośrednio na profilu mentora.',
+  },
+  {
+    id: '09',
+    title: 'Co zrobić, jeśli mam problem z sesją lub z mentorem?',
+    description:
+        'Jeśli napotkasz jakiekolwiek problemy podczas sesji lub z mentorem, możesz skontaktować się z naszym zespołem wsparcia, który pomoże Ci rozwiązać problem. Wszystkie zgłoszenia są traktowane poufnie i rozpatrywane indywidualnie.',
+  },
+];
+
 
 export const fetchFaqList = async () => {
   try {
