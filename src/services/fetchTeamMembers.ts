@@ -32,9 +32,9 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
     const members = [
       {
         avatar_url:
-          'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+            'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
         description:
-          'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur.',
+            'Jestem CTO i współzałożycielem Skillgu. Od zawsze planowałem założyć własną firmę, a Skillgu jest realizacją tej wizji. Głęboko wierzę, że praca z mentorami przyspiesza rozwój zawodowy, pomaga w pokonywaniu barier i odblokowywaniu potencjału na każdym etapie kariery.',
         id: '1',
         name: 'Maciej Glazer',
         title: 'CEO Skillgu',
@@ -44,20 +44,20 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
           linkedin: 'https://www.linkedin.com/',
         },
       },
-      {
-        avatar_url:
-          'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
-        description:
-          'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur. lorem ipsum dolor sit amet consectetur',
-        id: '2',
-        name: 'Artur Barański',
-        title: 'Co-Founder',
-        username: 'art_baranski',
-        socials: {
-          skillgu: '',
-          linkedin: 'https://www.linkedin.com/in/artur-baranski/',
-        },
-      },
+      // {
+      //   avatar_url:
+      //     'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+      //   description:
+      //     'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur. lorem ipsum dolor sit amet consectetur',
+      //   id: '2',
+      //   name: 'Artur Barański',
+      //   title: 'Co-Founder',
+      //   username: 'art_baranski',
+      //   socials: {
+      //     skillgu: '',
+      //     linkedin: 'https://www.linkedin.com/in/artur-baranski/',
+      //   },
+      // },
       {
         avatar_url:
           'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
@@ -68,7 +68,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         title: 'CTO',
         username: 'dudziassoo',
         socials: {
-          skillgu: '',
+          skillgu: 'https://www.skillgu.com/',
           linkedin: 'https://www.linkedin.com/',
         },
       },
@@ -84,7 +84,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         title: 'Frontend Developer',
         username: 'gosia_kow',
         socials: {
-          skillgu: '',
+          skillgu: 'https://www.skillgu.com/',
           linkedin: 'https://www.linkedin.com/in/malgorzata-kowacka/',
         },
       },
@@ -98,7 +98,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         title: 'Senior React Developer',
         username: 'rado_ms',
         socials: {
-          skillgu: '',
+          skillgu: 'https://www.skillgu.com/',
           linkedin: 'https://www.linkedin.com/in/rados%C5%82aw-%C5%BCaczkiewicz-2534251bb/',
         },
       },
