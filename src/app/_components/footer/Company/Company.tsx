@@ -2,7 +2,7 @@ export const Company = ({ className }: { className?: string }) => {
   return (
     <div className={className}>
         <p className="text-base mb-4 font-semibold leading-7 text-primary">
-            Skillgu<br />
+            Skillgu.<br />
             Aleje Jerozolimskie 123a<br />
             02-017 Warszawa
         </p>

@@ -10,6 +10,8 @@ const navLinks = [
   { name: 'Polityka prywatności', id: 'policy', href: Paths.POLICY },
   { name: 'Regulamin', id: 'terms', href: Paths.TERMS },
   { name: 'Kontakt', id: 'contact', href: Paths.CONTACT },
+  { name: 'Cennik', id: 'pricing', href: Paths.PRICING },
+
 ]
 
 export const Navigation = ({ className }: { className?: string }) => {
