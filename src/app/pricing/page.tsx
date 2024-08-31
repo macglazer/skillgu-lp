@@ -21,20 +21,17 @@ const Pricing = async () => {
                         Wybierz ten plan
                     </button>
                     <h5 className="text-[18px] font-semibold mb-4 text-primary">
-                        Co ten plan zawiera?
+                        Co zawiera ten plan?
                     </h5>
                     <ul className="list-none text-base600 space-y-2 text-left">
-                        <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Brak stałej opłaty
-                        </li>
                         <li className="flex items-center">
                             <FaCheckCircle className="text-primary mr-2" /> Pełny dostęp do aplikacji
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> 20% prowizji od spotkania
+                            <FaCheckCircle className="text-primary mr-2" /> Nieograniczona liczba mentee
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> 15% prowizji od mentoringu
+                            <FaCheckCircle className="text-primary mr-2" /> 18% prowizji od spotkania
                         </li>
                         <li className="flex items-center">
                             <FaCheckCircle className="text-primary mr-2" /> Brak darmowych spotkań
@@ -49,28 +46,28 @@ const Pricing = async () => {
                             Basic
                         </h4>
                     </div>
-                    <p className="text-[48px] font-semibold text-[#252B61] mb-2">69 zł <span className="text-[18px] font-normal text-base600">/ miesiąc</span></p>
+                    <p className="text-[48px] font-semibold text-[#252B61] mb-2">89 zł <span className="text-[18px] font-normal text-base600">/ miesiąc</span></p>
                     <button className="bg-secondary text-white py-4 px-12 rounded-full font-semibold mb-6">
                         Wybierz ten plan
                     </button>
                     <h5 className="text-[18px] font-semibold mb-4 text-primary">
-                        Co ten plan zawiera?
+                        Co zawiera ten plan?
                     </h5>
                     <ul className="list-none text-base600 space-y-2 text-left">
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Stała opłata miesięczna
+                            <FaCheckCircle className="text-primary mr-2" /> 5 darmowych spotań w miesiącu
+                        </li>
+                        <li className="flex items-center">
+                            <FaCheckCircle className="text-primary mr-2" /> Gwarancja stałej opłaty miesięcznej
+                        </li>
+                        <li className="flex items-center">
+                            <FaCheckCircle className="text-primary mr-2" /> Niższa prowizja: 10%
                         </li>
                         <li className="flex items-center">
                             <FaCheckCircle className="text-primary mr-2" /> Pełny dostęp do aplikacji
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> 15% prowizji od spotkania
-                        </li>
-                        <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> 10% prowizji od mentoringu
-                        </li>
-                        <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> 5 darmowych spotkań w miesiącu
+                            <FaCheckCircle className="text-primary mr-2" /> Nieograniczona liczba mentee
                         </li>
                     </ul>
                 </div>
@@ -82,28 +79,28 @@ const Pricing = async () => {
                             Pro
                         </h4>
                     </div>
-                    <p className="text-[48px] font-semibold text-[#252B61] mb-2">130 zł <span className="text-[18px] font-normal text-base600">/ miesiąc</span></p>
+                    <p className="text-[48px] font-semibold text-[#252B61] mb-2">190 zł <span className="text-[18px] font-normal text-base600">/ miesiąc</span></p>
                     <button className="bg-secondary text-white py-4 px-12 rounded-full font-semibold mb-6">
                         Wybierz ten plan
                     </button>
                     <h5 className="text-[18px] font-semibold mb-4 text-primary">
-                        Co ten plan zawiera?
+                        Co zawiera ten plan?
                     </h5>
                     <ul className="list-none text-base600 space-y-2 text-left">
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Stała opłata miesięczna
+                            <FaCheckCircle className="text-primary mr-2" /> Darmowe spotkania bez limitu
+                        </li>
+                        <li className="flex items-center">
+                            <FaCheckCircle className="text-primary mr-2" /> Gwarancja stałej opłaty miesięcznej
+                        </li>
+                        <li className="flex items-center">
+                            <FaCheckCircle className="text-primary mr-2" /> Brak prowizji
                         </li>
                         <li className="flex items-center">
                             <FaCheckCircle className="text-primary mr-2" /> Pełny dostęp do aplikacji
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> 0% prowizji od spotkania
-                        </li>
-                        <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> 5% prowizji od mentoringu
-                        </li>
-                        <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Darmowe spotkania bez limitu
+                            <FaCheckCircle className="text-primary mr-2" /> Nieograniczona liczba mentee
                         </li>
                     </ul>
                 </div>
