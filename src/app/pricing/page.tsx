@@ -9,21 +9,21 @@ const Pricing = async () => {
                 Cennik
             </h3>
             <div className="flex flex-col lg:flex-row justify-center gap-8">
-                <div className="flex flex-col items-center p-10 border rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-full max-w-xs lg:max-w-sm">
-                    <div className="flex items-center justify-center mb-4">
+                <div className="flex flex-col items-start p-10 border rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out w-full max-w-xs lg:max-w-sm">
+                    <div className="flex items-center justify-start mb-4">
                         <span className="w-10 h-10"></span> {/* Placeholder dla braku ikony */}
                         <h4 className="text-[24px] font-bold tracking-normal lg:text-4xl lg:leading-[48px] text-primary ml-2">
-                            Darmowy
+                            Free
                         </h4>
                     </div>
-                    <p className="text-[48px] font-semibold text-[#252B61] mb-2">0 zł <span className="text-[18px] font-normal text-base600">/ miesiąc</span></p>
-                    <button className="bg-secondary text-white py-4 px-12 rounded-full font-semibold mb-6">
+                    <p className="text-[29px] font-semibold text-[#FF6A3D] mb-2">0 zł <span className="text-[18px] font-normal text-base600">/ miesiąc</span></p>
+                    <button className="bg-[#252B61] text-white py-3 px-6 w-full rounded-full font-semibold mb-6">
                         Wybierz ten plan
                     </button>
                     <h5 className="text-[18px] font-semibold mb-4 text-primary">
                         Co zawiera ten plan?
                     </h5>
-                    <ul className="list-none text-base600 space-y-2 text-left">
+                    <ul className="list-none text-base600 space-y-3 text-left">
                         <li className="flex items-center">
                             <FaCheckCircle className="text-primary mr-2" /> Pełny dostęp do aplikacji
                         </li>
@@ -39,21 +39,21 @@ const Pricing = async () => {
                     </ul>
                 </div>
 
-                <div className="flex flex-col items-center p-10 border rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-full max-w-xs lg:max-w-sm">
-                    <div className="flex items-center justify-center mb-4">
+                <div className="flex flex-col items-start p-10 border rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out w-full max-w-xs lg:max-w-sm">
+                    <div className="flex items-center justify-start mb-4">
                         <StarIcon className="w-10 h-10" />
                         <h4 className="text-[24px] font-bold tracking-normal lg:text-4xl lg:leading-[48px] text-primary ml-2">
                             Basic
                         </h4>
                     </div>
-                    <p className="text-[48px] font-semibold text-[#252B61] mb-2">89 zł <span className="text-[18px] font-normal text-base600">/ miesiąc</span></p>
-                    <button className="bg-secondary text-white py-4 px-12 rounded-full font-semibold mb-6">
+                    <p className="text-[29px] font-semibold text-[#FF6A3D] mb-2">89 zł <span className="text-[18px] font-normal text-base600">/ miesiąc</span></p>
+                    <button className="bg-[#252B61] text-white py-3 px-6 w-full rounded-full font-semibold mb-6">
                         Wybierz ten plan
                     </button>
                     <h5 className="text-[18px] font-semibold mb-4 text-primary">
                         Co zawiera ten plan?
                     </h5>
-                    <ul className="list-none text-base600 space-y-2 text-left">
+                    <ul className="list-none text-base600 space-y-3 text-left">
                         <li className="flex items-center">
                             <FaCheckCircle className="text-primary mr-2" /> 5 darmowych spotań w miesiącu
                         </li>
@@ -72,21 +72,21 @@ const Pricing = async () => {
                     </ul>
                 </div>
 
-                <div className="flex flex-col items-center p-10 border rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-full max-w-xs lg:max-w-sm">
-                    <div className="flex items-center justify-center mb-4">
+                <div className="flex flex-col items-start p-10 border rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out w-full max-w-xs lg:max-w-sm">
+                    <div className="flex items-center justify-start mb-4">
                         <KingIcon className="w-10 h-10" />
                         <h4 className="text-[24px] font-bold tracking-normal lg:text-4xl lg:leading-[48px] text-primary ml-2">
                             Pro
                         </h4>
                     </div>
-                    <p className="text-[48px] font-semibold text-[#252B61] mb-2">190 zł <span className="text-[18px] font-normal text-base600">/ miesiąc</span></p>
-                    <button className="bg-secondary text-white py-4 px-12 rounded-full font-semibold mb-6">
+                    <p className="text-[29px] font-semibold text-[#FF6A3D] mb-2">190 zł <span className="text-[18px] font-normal text-base600">/ miesiąc</span></p>
+                    <button className="bg-[#252B61] text-white py-3 px-6 w-full rounded-full font-semibold mb-6">
                         Wybierz ten plan
                     </button>
                     <h5 className="text-[18px] font-semibold mb-4 text-primary">
                         Co zawiera ten plan?
                     </h5>
-                    <ul className="list-none text-base600 space-y-2 text-left">
+                    <ul className="list-none text-base600 space-y-3 text-left">
                         <li className="flex items-center">
                             <FaCheckCircle className="text-primary mr-2" /> Darmowe spotkania bez limitu
                         </li>
