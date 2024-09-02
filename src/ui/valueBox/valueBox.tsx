@@ -1,5 +1,4 @@
 import clx from 'classnames'
-import { ReactNode } from 'react'
 
 type ValueBoxPropTypes = {
   className: string
