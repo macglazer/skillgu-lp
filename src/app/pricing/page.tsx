@@ -55,7 +55,7 @@ const Pricing = async () => {
                     </h5>
                     <ul className="list-none text-base600 space-y-3 text-left">
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> 5 darmowych spotań w miesiącu
+                            <FaCheckCircle className="text-primary mr-2" /> 5 darmowych spotkań w miesiącu
                         </li>
                         <li className="flex items-center">
                             <FaCheckCircle className="text-primary mr-2" /> Gwarancja stałej opłaty miesięcznej
