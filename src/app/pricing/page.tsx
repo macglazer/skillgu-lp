@@ -1,8 +1,8 @@
-import { FaCheckCircle } from 'react-icons/fa';
-import { StarIcon } from "@/app/assets/icons/StarIcon";
-import { KingIcon } from '@/app/assets/icons/KingIcon';
+import { Basic } from "@/ui/icons/Basic";
+import { CheckCircle } from "@/ui/icons/CheckCircle";
+import { Pro } from "@/ui/icons/Pro";
 
-const Pricing = async () => {
+export default async function Pricing() {
     return (
         <section className="m-auto flex w-full max-w-6xl flex-col gap-10 p-[44px] px-5 lg:px-0">
             <h3 className="text-center text-[36px] font-bold leading-[1.2] tracking-normal lg:text-5xl lg:leading-[72px] text-primary mb-10">
@@ -25,23 +25,25 @@ const Pricing = async () => {
                     </h5>
                     <ul className="list-none text-base600 space-y-3 text-left">
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Pełny dostęp do aplikacji
+                            <CheckCircle className="text-primary mr-2" /> Pełny dostęp do aplikacji
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Nieograniczona liczba mentee
+                            <CheckCircle className="text-primary mr-2" /> Nieograniczona liczba mentee
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> 18% prowizji od spotkania
+                            <CheckCircle className="text-primary mr-2" /> 18% prowizji od spotkania
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Brak darmowych spotkań
+                            <CheckCircle className="text-primary mr-2" /> Brak darmowych spotkań
                         </li>
                     </ul>
                 </div>
 
                 <div className="flex flex-col items-start p-10 border rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out w-full max-w-xs lg:max-w-sm">
                     <div className="flex items-center justify-start mb-4">
-                        <StarIcon className="w-10 h-10" />
+                        <div className="w-10 h-10 bg-base200 border border-base400 rounded-full flex justify-center items-center">
+                        <Basic  />
+                            </div>
                         <h4 className="text-[24px] font-bold tracking-normal lg:text-4xl lg:leading-[48px] text-primary ml-2">
                             Basic
                         </h4>
@@ -55,26 +57,26 @@ const Pricing = async () => {
                     </h5>
                     <ul className="list-none text-base600 space-y-3 text-left">
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> 5 darmowych spotkań w miesiącu
+                            <CheckCircle className="text-primary mr-2" /> 5 darmowych spotkań w miesiącu
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Gwarancja stałej opłaty miesięcznej
+                            <CheckCircle className="text-primary mr-2" /> Gwarancja stałej opłaty miesięcznej
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Niższa prowizja: 10%
+                            <CheckCircle className="text-primary mr-2" /> Niższa prowizja: 10%
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Pełny dostęp do aplikacji
+                            <CheckCircle className="text-primary mr-2" /> Pełny dostęp do aplikacji
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Nieograniczona liczba mentee
+                            <CheckCircle className="text-primary mr-2" /> Nieograniczona liczba mentee
                         </li>
                     </ul>
                 </div>
 
                 <div className="flex flex-col items-start p-10 border rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out w-full max-w-xs lg:max-w-sm">
                     <div className="flex items-center justify-start mb-4">
-                        <KingIcon className="w-10 h-10" />
+                        <Pro className="w-10 h-10" />
                         <h4 className="text-[24px] font-bold tracking-normal lg:text-4xl lg:leading-[48px] text-primary ml-2">
                             Pro
                         </h4>
@@ -88,19 +90,19 @@ const Pricing = async () => {
                     </h5>
                     <ul className="list-none text-base600 space-y-3 text-left">
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Darmowe spotkania bez limitu
+                            <CheckCircle className="text-primary mr-2" /> Darmowe spotkania bez limitu
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Gwarancja stałej opłaty miesięcznej
+                            <CheckCircle className="text-primary mr-2" /> Gwarancja stałej opłaty miesięcznej
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Brak prowizji
+                            <CheckCircle className="text-primary mr-2" /> Brak prowizji
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Pełny dostęp do aplikacji
+                            <CheckCircle className="text-primary mr-2" /> Pełny dostęp do aplikacji
                         </li>
                         <li className="flex items-center">
-                            <FaCheckCircle className="text-primary mr-2" /> Nieograniczona liczba mentee
+                            <CheckCircle className="text-primary mr-2" /> Nieograniczona liczba mentee
                         </li>
                     </ul>
                 </div>
@@ -108,5 +110,3 @@ const Pricing = async () => {
         </section>
     );
 };
-
-export default Pricing;
