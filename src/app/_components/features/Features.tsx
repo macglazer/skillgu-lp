@@ -86,8 +86,9 @@ export const Features = () => {
                         Znajdź swój idealny match
                     </p>
                     <p className="text-[14px] font-medium leading-6 text-base600 lg:text-base lg:leading-7">
-                        Wybierz mentora, który najlepiej odpowiada Twoim potrzebom i oczekiwaniom. Dzięki naszej
-                        zaawansowanej funkcji dopasowania, znajdziesz mentora z odpowiednim doświadczeniem i wiedzą, który pomoże Ci osiągnąć Twoje cele.
+                        Na Skillgu znajdziesz mentora, który najbardziej odpowiada Twoim potrzebom. Dzięki zaawansowanej
+                        funkcji dopasowania, znajdziesz bez problemu mentora z odpowiednim doświadczeniem i wiedzą, ale
+                        przede wszystkim z flow, które odpowiada Twoim oczekiwaniom.
                     </p>
                 </div>
                 <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
