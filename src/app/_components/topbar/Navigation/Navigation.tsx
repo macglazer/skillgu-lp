@@ -8,10 +8,9 @@ import { Paths } from '@/app/paths'
 const navLinks = [
   // { name: 'Strona główna', id: 'home', href: Paths.HOME },
   { name: 'O nas', id: 'about', href: Paths.ABOUT },
-  { name: 'Lista mentorów', id: 'mentors', href: Paths.MENTORS },
+  { name: 'Lista mentorów', id: 'mentors', href: '#mentors-section' },
   { name: 'Mój profil', id: 'login', href: Paths.LOGIN },
-  // { name: 'Cennik', id: 'pricing', href: Paths.PRICING },
-  // { name: 'FAQ', id: 'faq', href: Paths.FAQ },
+
 ]
 
 export const Navigation = ({

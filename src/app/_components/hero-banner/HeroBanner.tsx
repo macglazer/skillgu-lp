@@ -35,7 +35,7 @@ export const HeroBanner = () => {
             setLoopNum((prevLoopNum) => prevLoopNum + 1);
         };
 
-        const interval = setInterval(handleTextChange, 1000); // Zmieniaj tekst co 1.5 sekundy
+        const interval = setInterval(handleTextChange, 1000);
 
         return () => clearInterval(interval);
     }, [loopNum, textArray]);
@@ -45,19 +45,15 @@ export const HeroBanner = () => {
             <div className="m-auto max-w-3xl px-5 py-24">
                 <h3 className="hidden">Skillgu home page</h3>
                 <div className="flex flex-col justify-center items-center mb-8 w-full text-center text-32px font-bold leading-[48px] tracking-[-1px] text-primary lg:text-48px lg:leading-72px lg:tracking-[-2px]">
-          <span className="font-semibold tracking-wide text-primary">
-           Twój mentor od:
-          </span>
+                    <span className="font-semibold tracking-wide text-primary">
+                        Twój mentor od:
+                    </span>
                     <span
-                        className={clx(
-                            alcatra.className,
-                            'font-semibold tracking-wide text-orange-500 mt-4',
-                            'transition-opacity duration-500 ease-in-out opacity-0', // Domyślna przezroczystość
-                        )}
-                        style={{ opacity: text ? 1 : 0 }} // Użyj dynamicznej zmiany przezroczystości
+                        className="font-semibold tracking-wide text-orange-500 mt-4 transition-opacity duration-500 ease-in-out"
+                        style={{ opacity: text ? 1 : 0 }} // Zmienna przezroczystość
                     >
-            {text}
-          </span>
+                        {text}
+                    </span>
                 </div>
                 <Link
                     href={Paths.MENTORS}
