@@ -13,18 +13,20 @@ export const PricingPlan = ({
   price,
   properties,
 }: PricingPlanPropsType) => {
- const planName = {
-      free: "Free",
-      basic: "Basic",
-      pro: "Pro"
- }
+  const planName = {
+    free: 'Free',
+    basic: 'Basic',
+    pro: 'Pro',
+  }
   const Icon = type === 'basic' ? Basic : Pro
   return (
-    <div className="flex w-full max-w-xs flex-col items-start gap-4 rounded-xl border px-5 py-8 transition-transform duration-300 ease-in-out hover:scale-105 lg:gap-6">
+    <div className="m-auto flex w-full max-w-xs flex-col items-start gap-4 rounded-xl border px-5 py-8 transition-transform duration-300 ease-in-out hover:scale-105 md:m-0 lg:gap-6">
       <div className="flex items-center justify-start gap-3">
-        {type !== 'free' ?(<div className="flex h-10 w-10 items-center justify-center rounded-full border border-base400 bg-base200">
-        <Icon /> 
-        </div>): null}
+        {type !== 'free' ? (
+          <div className="flex h-10 w-10 items-center justify-center rounded-full border border-base400 bg-base200">
+            <Icon />
+          </div>
+        ) : null}
         <h4 className="text-[24px] font-bold -tracking-[1px] text-primary lg:text-[28px] lg:leading-[48px]">
           {planName[type]}
         </h4>
