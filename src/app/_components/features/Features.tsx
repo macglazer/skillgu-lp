@@ -63,8 +63,7 @@ export const Features = () => {
                     <p className="text-[14px] font-medium leading-6 text-base600 lg:text-base lg:leading-7">
                         Czatuj ze swoim mentorem w dowolnym momencie i uzyskaj natychmiastowe odpowiedzi na swoje
                         pytania. Dzięki bezpośredniemu kontaktowi możesz szybko rozwiewać wątpliwości, omawiać postępy w
-                        nauce i uzyskiwać cenne wskazówki na bieżąco. Nasza platforma zapewnia przejrzystą i bezpieczną
-                        komunikację, aby wspierać Twój rozwój na każdym kroku.
+                        nauce i uzyskiwać cenne wskazówki na bieżąco.
                     </p>
                 </div>
                 <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">

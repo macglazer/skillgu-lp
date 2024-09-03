@@ -50,10 +50,10 @@ export const Navigation = ({
         {/*  Zaloguj się*/}
         {/*</Link>*/}
         <Link
-            href={Paths.MENTORLIST}
+            href={Paths.REGISTER}
             className="rounded-full bg-secondaryLight px-4 py-10px text-center text-14px font-semibold text-secondary"
         >
-          Znajdź mentora
+          Zostań mentorem
         </Link>
       </div>
     </nav>
