@@ -6,6 +6,7 @@ import { Skillgu } from '@/ui/icons/Skillgu'
 import { ProfileImage } from '@/ui/ProfileImage'
 
 import { Member } from '@/services/fetchTeamMembers'
+import { Paths } from '@/app/paths'
 
 export const TeamMemberCard = ({
   avatar_url,
@@ -13,9 +14,10 @@ export const TeamMemberCard = ({
   name,
   title,
   socials,
+  username,
 }: Member) => {
   return (
-    <article className="m-auto flex max-w-md flex-col gap-3 rounded-3xl md:m-0">
+    <article className="m-auto flex max-w-sm flex-col gap-3 rounded-3xl md:m-0">
       <div>
         <ProfileImage
           alt={`${name} profile image`}
@@ -51,8 +53,17 @@ export const TeamMemberCard = ({
           {title}
         </p>
       </div>
+
       <p className="text-14px font-medium leading-[25px] text-base600 lg:text-base lg:leading-7">
-        {description}
+        {description.length < 300
+          ? description
+          : `${description.slice(0, 300)}...`}{' '}
+        <Link
+          href={`${Paths.MENTORPROFILE}/${username}` as Route}
+          className="cursor-pointer font-semibold text-secondary"
+        >
+          Pokaż więcej
+        </Link>
       </p>
     </article>
   )

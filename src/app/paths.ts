@@ -3,7 +3,7 @@ export enum Paths {
   ABOUT = '/about',
   MENTORS = 'https://app.skillgu.com/search-mentors',
   PRICING = '/pricing',
-  MENTORPROFILE = '/mentor',
+  MENTORPROFILE = 'https://test.skillgu.com/mentor',
   BLOG = '/blog',
   FAQ = '/#faq',
   CONTACT = '/contact',
