@@ -21,6 +21,7 @@ const config: Config = {
       fontFamily: {
         artist: ['Alkatra', 'system-ui'],
       },
+
       fontSize: {
         '56px': '56px',
         '48px': '48px',
@@ -60,6 +61,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('autoprefixer'),
+    require('tailwindcss'),
+  ],
 }
 export default config

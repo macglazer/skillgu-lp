@@ -15,7 +15,7 @@ export const ReviewCard = ({ review, modal }: ReviewCardPropType) => {
   return (
     <div className="m-auto flex h-full w-full max-w-md flex-col items-start justify-start gap-3">
       <div
-        className={`flex items-start justify-center gap-4 ${modal ? 'order-2' : ''} md:order-2`}
+        className={`flex items-start justify-center gap-4 ${modal ? 'order-2 [-webkit-order:2]' : ''} md:order-2 md:[-webkit-order:2]`}
       >
         <ProfileImage
           className="h-12 w-12 rounded-full"
