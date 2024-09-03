@@ -15,7 +15,7 @@ export const TeamMemberCard = ({
   socials,
 }: Member) => {
   return (
-    <article className="m-auto flex max-w-md flex-col gap-3 rounded-3xl md:m-0">
+    <article className="m-auto flex max-w-sm flex-col gap-3 rounded-3xl md:m-0">
       <div>
         <ProfileImage
           alt={`${name} profile image`}
