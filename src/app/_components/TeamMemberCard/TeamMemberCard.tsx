@@ -1,5 +1,8 @@
+'use client'
+
 import { Route } from 'next'
 import Link from 'next/link'
+import { useState } from 'react'
 
 import { Linkedin } from '@/ui/icons/Linkedin'
 import { Skillgu } from '@/ui/icons/Skillgu'
@@ -14,6 +17,8 @@ export const TeamMemberCard = ({
   title,
   socials,
 }: Member) => {
+  const [isShownAll, setIsShownAll] = useState(false)
+
   return (
     <article className="m-auto flex max-w-sm flex-col gap-3 rounded-3xl md:m-0">
       <div>
@@ -51,9 +56,21 @@ export const TeamMemberCard = ({
           {title}
         </p>
       </div>
-      <p className="text-14px font-medium leading-[25px] text-base600 lg:text-base lg:leading-7">
-        {description}
-      </p>
+      {description.length > 299 ? (
+        <p className="text-14px font-medium leading-[25px] text-base600 lg:text-base lg:leading-7">
+          {isShownAll ? description : `${description.slice(0, 300)}...`}{' '}
+          <button
+            className="cursor-pointer font-semibold text-secondary"
+            onClick={() => setIsShownAll(!isShownAll)}
+          >
+            {isShownAll ? 'Ukryj' : 'Pokaż więcej'}
+          </button>
+        </p>
+      ) : (
+        <p className="text-14px font-medium leading-[25px] text-base600 lg:text-base lg:leading-7">
+          {description}
+        </p>
+      )}
     </article>
   )
 }
