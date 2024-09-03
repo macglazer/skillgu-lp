@@ -44,8 +44,7 @@ export const MentorsList = async ({
                     {`100+ mentorów w ${categories.length} kategoriach`}
                 </h3>
                 <p className="m-auto max-w-2xl p-3 text-center text-[14px] font-medium leading-6 text-base600 lg:text-base lg:leading-7">
-                    Lorem ipsum dolor sit amet consectetur. Duis sagittis pharetra
-                    sollicitudin tincidunt.
+                    Wybierz kategorię, sprawdź opinie innych i zacznij już teraz!
                 </p>
             </div>
             <div className="flex flex-wrap justify-start gap-2 md:justify-center lg:gap-4">

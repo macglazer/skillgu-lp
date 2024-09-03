@@ -19,14 +19,16 @@ export const HeroBanner = () => {
     const textArray = [
         'IT',
         'startupów',
-        'biznesu',
         'UX/UI',
+        'biznesu',
         'marketingu',
         'rozwoju zawodowego',
         'strategii biznesowej',
+        'projektowania graficznego',
         'zarządzania projektami',
-        'inspiracji i motywacji',
         'innowacji technologicznych',
+        'montażu video',
+        'social media',
     ];
 
     useEffect(() => {
@@ -35,7 +37,7 @@ export const HeroBanner = () => {
             setLoopNum((prevLoopNum) => prevLoopNum + 1);
         };
 
-        const interval = setInterval(handleTextChange, 1000);
+        const interval = setInterval(handleTextChange, 1500);
 
         return () => clearInterval(interval);
     }, [loopNum, textArray]);
