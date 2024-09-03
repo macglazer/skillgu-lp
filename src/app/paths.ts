@@ -1,7 +1,7 @@
 export enum Paths {
   HOME = '/',
   ABOUT = '/about',
-  MENTORS = 'https://test.skillgu.com/search-mentors',
+  MENTORS = 'https://app.skillgu.com/search-mentors',
   PRICING = '/pricing',
   MENTORPROFILE = '/mentor',
   BLOG = '/blog',
@@ -13,9 +13,9 @@ export enum Paths {
   INSTAGRAM = '/',
   LINKEDIN = '/',
   YOUTUBE = '/',
-  LOGIN = 'https://test.skillgu.com/auth/login',
+  LOGIN = 'https://app.skillgu.com/auth/login',
   LOGINASMENTEE = '/',
-  REGISTER = 'https://test.skillgu.com/register-mentor',
+  REGISTER = 'https://app.skillgu.com/register-mentor',
   REGISTERASMENTEE = '/',
-  MENTORLIST = 'https://test.skillgu.com/search-mentors',
+  MENTORLIST = 'https://app.skillgu.com/search-mentors',
 }
