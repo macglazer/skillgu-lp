@@ -13,9 +13,9 @@ interface ReviewCardPropType {
 export const ReviewCard = ({ review, modal }: ReviewCardPropType) => {
   const { id, authorName, content, rate, mentor } = review
   return (
-    <div className="m-auto flex h-full w-full max-w-md flex-col items-start justify-start gap-3">
+    <div className="flex h-full w-full max-w-md flex-col items-start justify-start gap-3 md:max-w-[calc(50%-12px)] lg:max-w-md">
       <div
-        className={`flex items-start justify-center gap-4 ${modal ? 'order-2 [-webkit-order:2]' : ''} md:order-2 md:[-webkit-order:2]`}
+        className={`flex items-start justify-center gap-4 ${modal ? 'order-2' : ''} md:order-2`}
       >
         <ProfileImage
           className="h-12 w-12 rounded-full"
@@ -32,7 +32,7 @@ export const ReviewCard = ({ review, modal }: ReviewCardPropType) => {
         </div>
       </div>
       <div
-        className={`h-full w-full rounded-3xl ${modal ? '' : 'border border-base200 p-5'} `}
+        className={`h-full w-full flex-grow rounded-3xl ${modal ? '' : 'border border-base200 p-5'} `}
       >
         <div className="mb-3 flex items-center gap-3">
           <p

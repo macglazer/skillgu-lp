@@ -39,7 +39,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
                 id: '1',
                 name: 'Maciej Glazer',
                 title: 'CEO Skillgu',
-                username: 'mac_glaz',
+                username: 'Maciekskillguru-1997887680',
                 socials: {
                     skillgu: 'https://www.skillgu.com/',
                     linkedin: 'https://www.linkedin.com/',
