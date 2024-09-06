@@ -2,8 +2,6 @@
 
 import React, { Suspense, useState, useEffect } from 'react';
 import Link from 'next/link';
-import clx from 'classnames';
-import { alcatra } from '@/app/fonts';
 import { Paths } from '@/app/paths';
 
 const HeroBannerVideo = React.lazy(() =>
