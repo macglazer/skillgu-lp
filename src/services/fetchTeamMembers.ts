@@ -32,7 +32,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         const members = [
             {
                 avatar_url:
-                    'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+                    'https://res.cloudinary.com/dkclg8ppw/image/upload/v1725954559/ajkqgb01iif7crd10dea.jpg',
                 description:
                     'Pomysłodawca, założyciel oraz jeden z programistów Skillgu. Od zawsze planowałem założyć własną firmę, a Skillgu jest realizacją tej wizji.' +
                     ' Jako członek zespołu programistycznego, aktywnie uczestniczę w rozwijaniu naszej platformy, łącząc technologię z moją wizją rozwoju kariery. ' +
@@ -91,7 +91,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
             },
             {
               avatar_url:
-                'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+                'https://res.cloudinary.com/dkclg8ppw/image/upload/v1725969650/wdojtrnyn9olfr9xjjoa.jpg',
               description:
                 'Radosław współptwórca skillgu.com, świetny teammate oraz senior front-developer i team leader z 15 letnim stażem. W Skillgu współodpowiedzialny za front i super atmosferę. Radosław oprócz swoich usług jest również mentorem. Po więcej informacji zapraszamy na profil Radosława',
               id: '3',
