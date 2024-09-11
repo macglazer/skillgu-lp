@@ -60,21 +60,22 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
                     linkedin: 'https://www.linkedin.com/in/artur-baranski/',
                 },
             },
-            // {
-            //     avatar_url:
-            //         'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
-            //     description:
-            //         'Główny programista i CTO Skillgu, wybitny inżynier oprogramowania, twórca „mentosów”. Dołączył do zespołu, wnosząc ogromną wiedzę i doświadczenie, które szybko uczyniły go nieocenionym liderem technologicznym.' +
-            //         ' Jego zdolność do rozwiązywania najtrudniejszych problemów programistycznych oraz głęboka znajomość technologii sprawiają, że jest niezastąpiony w rozwoju naszej platformy. Jako CTO, odpowiada za strategiczne decyzje technologiczne i kierowanie zespołem programistycznym, dążąc do ciągłego ulepszania i innowacji w Skillgu.',
-            //     id: '3',
-            //     name: 'Artur Dudzik',
-            //     title: 'CTO',
-            //     username: 'dudziassoo',
-            //     socials: {
-            //         skillgu: 'https://www.skillgu.com/',
-            //         linkedin: 'https://www.linkedin.com/',
-            //     },
-            // },
+            {
+                avatar_url:
+                    'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+                description:
+                    'Człowiek backend oraz devops. Maksymalnie skupiony na zadaniach, pierwszy mentor skillgu, twórca „mentosów”.' +
+                    ' Dołączył do zespołu, wnosząc ogromną wiedzę i doświadczenie, które szybko uczyniły go nieocenionym liderem technologicznym.' +
+                    'Super kolega, na którego zawsze można liczyć.',
+                id: '5',
+                name: 'Artur Dudzik',
+                title: 'CTO',
+                username: 'dudziassoo',
+                socials: {
+                    skillgu: 'https://www.skillgu.com/dudziassoo',
+                    linkedin: 'https://www.linkedin.com/',
+                },
+            },
             {
                 avatar_url:
                     'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
@@ -103,21 +104,6 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
                     linkedin: 'https://www.linkedin.com/in/malgorzata-kowacka/',
                 },
             },
-
-            // {
-            //   avatar_url:
-            //     'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
-            //   description:
-            //     'Jestem UI Designerem z 10-letnim doświadczeniem, lorem ipsum dolor sit amet consectetur.',
-            //   id: '6',
-            //   name: 'Jan Mus',
-            //   title: 'Frontend Developer',
-            //   username: 'rob_maj',
-            //   socials: {
-            //     skillgu: '',
-            //     linkedin: 'https://www.linkedin.com/',
-            //   },
-            // },
         ]
         return {
             members,
