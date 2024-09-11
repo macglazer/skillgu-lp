@@ -77,7 +77,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
             // },
             {
               avatar_url:
-                'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+                'https://res.cloudinary.com/dkclg8ppw/image/upload/v1726056411/MalgorzataKowacka_vxwhbu.jpg',
               description:
                 'Małgorzata front-developer`ka, współtwórczyni skillgu oraz super koleżanka. Razem z Radosławem trzyma rękę na pulsie przy tworzeniu skillgu. Magłorzata również chętnie pomoże nowicjuszom wejść na rynek IT',
               id: '1',
