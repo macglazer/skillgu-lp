@@ -46,36 +46,36 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
                     linkedin: 'https://www.linkedin.com/',
                 },
             },
-            {
-                avatar_url:
-                    'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
-                description:
-                    'Współpomysłodawca, a w bieżącej pracy zajmuje się kwestami związanymi z rozwojem funkcjonalnym platformy, testowaniem i badaniem nowych rozwiązań oraz obszarem doświadczeń użytkownika (UX). Dzielnie „walczy” też na polu marketingu, bazując na swoim kilkuletnim doświadczeniu związanym z PR, wystąpieniami publicznymi i kształtowaniu wizerunku medialnego. ',
-                id: '2',
-                name: 'Artur Barański',
-                title: 'Co-Founder',
-                username: 'art_baranski',
-                socials: {
-                    skillgu: 'https://www.skillgu.com/',
-                    linkedin: 'https://www.linkedin.com/in/artur-baranski/',
-                },
-            },
-            {
-                avatar_url:
-                    'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
-                description:
-                    'Człowiek backend oraz devops. Maksymalnie skupiony na zadaniach, pierwszy mentor skillgu, twórca „mentosów”.' +
-                    ' Dołączył do zespołu, wnosząc ogromną wiedzę i doświadczenie, które szybko uczyniły go nieocenionym liderem technologicznym.' +
-                    'Super kolega, na którego zawsze można liczyć.',
-                id: '5',
-                name: 'Artur Dudzik',
-                title: 'CTO',
-                username: 'dudziassoo',
-                socials: {
-                    skillgu: 'https://www.skillgu.com/dudziassoo',
-                    linkedin: 'https://www.linkedin.com/',
-                },
-            },
+            // {
+            //     avatar_url:
+            //         'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+            //     description:
+            //         'Współpomysłodawca, a w bieżącej pracy zajmuje się kwestami związanymi z rozwojem funkcjonalnym platformy, testowaniem i badaniem nowych rozwiązań oraz obszarem doświadczeń użytkownika (UX). Dzielnie „walczy” też na polu marketingu, bazując na swoim kilkuletnim doświadczeniu związanym z PR, wystąpieniami publicznymi i kształtowaniu wizerunku medialnego. ',
+            //     id: '2',
+            //     name: 'Artur Barański',
+            //     title: 'Co-Founder',
+            //     username: 'art_baranski',
+            //     socials: {
+            //         skillgu: 'https://www.skillgu.com/',
+            //         linkedin: 'https://www.linkedin.com/in/artur-baranski/',
+            //     },
+            // },
+            // {
+            //     avatar_url:
+            //         'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+            //     description:
+            //         'Człowiek backend oraz devops. Maksymalnie skupiony na zadaniach, pierwszy mentor skillgu, twórca „mentosów”.' +
+            //         ' Dołączył do zespołu, wnosząc ogromną wiedzę i doświadczenie, które szybko uczyniły go nieocenionym liderem technologicznym.' +
+            //         'Super kolega, na którego zawsze można liczyć.',
+            //     id: '5',
+            //     name: 'Artur Dudzik',
+            //     title: 'CTO',
+            //     username: 'dudziassoo',
+            //     socials: {
+            //         skillgu: 'https://www.skillgu.com/dudziassoo',
+            //         linkedin: 'https://www.linkedin.com/',
+            //     },
+            // },
             {
                 avatar_url:
                     'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
