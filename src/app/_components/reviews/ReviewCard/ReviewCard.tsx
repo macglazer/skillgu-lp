@@ -13,7 +13,7 @@ interface ReviewCardPropType {
 export const ReviewCard = ({ review, modal }: ReviewCardPropType) => {
   const { id, authorName, content, rate, mentor } = review
   return (
-    <div className="flex h-full w-full max-w-md flex-col items-start justify-start gap-3 md:max-w-[calc(50%-12px)] lg:max-w-md">
+    <div className="m-auto flex w-full max-w-md flex-col items-start justify-start gap-3 md:m-0 md:max-w-[calc(50%-12px)] lg:max-w-md">
       <div
         className={`flex items-start justify-center gap-4 ${modal ? 'order-2' : ''} md:order-2`}
       >

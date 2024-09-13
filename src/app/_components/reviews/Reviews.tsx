@@ -25,7 +25,7 @@ export const Reviews = async ({ reviewId }: { reviewId: string }) => {
           Nic nie zachęca do nauki tak bardzo jak dobra rekomendacja, prawda?
         </p>
         {reviews.length ? (
-          <div className="flex flex-col items-center md:items-start justify-center gap-x-4 gap-y-10 md:flex-row md:flex-wrap xl:flex-nowrap">
+          <div className="flex flex-col items-stretch justify-center gap-x-4 gap-y-10 md:flex-row md:flex-wrap xl:flex-nowrap">
             {reviews.map((review) => (
               <ReviewCard
                 review={review}
