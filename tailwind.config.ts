@@ -33,7 +33,7 @@ const config: Config = {
         '12px': '12px',
       },
       // screens: {
-      //   'lg': '968px',
+      //   'xl': '1200px',
       // },
       lineHeight: {
         '100.8px': '100.8px', // cta-banner

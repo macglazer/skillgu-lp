@@ -38,7 +38,7 @@ export const MentorsList = async ({
 
     const { mentors } = data
     return (
-        <section id="mentors-section" className="m-auto flex w-full max-w-xl flex-col gap-10 p-[44px] px-5 md:max-w-fit lg:max-w-[1304px]">  {/* Identyfikator dodany tutaj */}
+        <section id="mentors-section" className="m-auto flex w-full max-w-xl flex-col gap-10 p-[44px] px-5 sm:max-w-fit lg:max-w-[1304px]">  {/* Identyfikator dodany tutaj */}
             <div>
                 <h3 className="mb-4 text-center text-[28px] font-bold leading-[42px] lg:text-32px lg:leading-[48px]">
                     {`100+ mentorów w ${categories.length} kategoriach`}
@@ -61,7 +61,7 @@ export const MentorsList = async ({
                 ))}
             </div>
 
-            <div className="m-auto grid w-fit grid-cols-1 justify-center gap-x-4 gap-y-10 md:grid-cols-2 xl:grid-cols-4">
+            <div className="m-auto grid w-fit grid-cols-1 justify-center gap-x-4 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {mentors?.map((item: Mentor) => (
                     <MentorCard
                         key={item.id}

@@ -31,7 +31,7 @@ export const MentorCard = ({
 }: Mentor) => {
   return (
     <Link
-      className="m-auto flex max-w-md flex-col gap-3 rounded-3xl border border-base200 p-5"
+      className="m-auto flex max-w-sm flex-col gap-3 rounded-3xl border border-base200 p-5"
       href={`${Paths.MENTORPROFILE}/${username}` as Route}
     >
       <div className="relative">
