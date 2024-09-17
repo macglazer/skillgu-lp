@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       spacing: {
+        '2px': '2px',
         '3x': '12px',
         '10px': '10px', // cta-banner
         '24px': '24px', // cta-banner
@@ -21,7 +22,6 @@ const config: Config = {
       fontFamily: {
         artist: ['Alkatra', 'system-ui'],
       },
-
       fontSize: {
         '56px': '56px',
         '48px': '48px',
@@ -58,6 +58,14 @@ const config: Config = {
         warning100: '#FCA004',
         warning200: '#FFFBED',
         'white-11': 'rgba(255, 255, 255, 0.11)',
+      },
+      keyframes: {
+        blink: {
+          '50%': { opacity: '0' },
+        },
+      },
+      animation: {
+        blink: 'blink 1s step-start infinite',
       },
     },
   },
