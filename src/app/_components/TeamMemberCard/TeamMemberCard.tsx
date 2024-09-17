@@ -27,7 +27,7 @@ export const TeamMemberCard = ({
       </div>
       <div>
         <div className="flex items-start justify-between">
-          <h4 className="py-2 text-xl font-bold lg:text-[28px] lg:leading-[32px] lg:tracking-[-1px]">
+          <h4 className="py-2 text-xl font-bold lg:text-2xl lg:leading-[32px] lg:tracking-[-1px]">
             {name}
           </h4>
           <div className="flex gap-2">
@@ -55,9 +55,9 @@ export const TeamMemberCard = ({
       </div>
 
       <p className="text-14px font-medium leading-[25px] text-base600 lg:text-base lg:leading-7">
-        {description.length < 300
+        {description.length < 220
           ? description
-          : `${description.slice(0, 300)}...`}{' '}
+          : `${description.slice(0, 220)}...`}{' '}
         <Link
           href={`${Paths.MENTORPROFILE}/${username}` as Route}
           className="cursor-pointer font-semibold text-secondary"
