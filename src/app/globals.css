@@ -27,7 +27,6 @@ body {
   /* Klasa dla pomarańczowego przycisku „Zostań mentorem” */
   .link-primary-rounded {
     @apply rounded-full bg-secondary text-white text-center font-semibold;
-    padding: 10px 20px;
   }
 
   .link-primary {
