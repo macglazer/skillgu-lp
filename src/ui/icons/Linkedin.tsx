@@ -1,14 +1,16 @@
 export const Linkedin = ({
   className,
   color = '#56658F',
+  size = '32',
 }: {
   className?: string
   color?: string
+  size?: string
 }) => {
   return (
     <svg
-      width="24"
-      height="24"
+      width={size}
+      height={size}
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

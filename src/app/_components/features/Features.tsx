@@ -4,7 +4,7 @@ export const Features = () => {
   return (
     <section className="m-auto flex max-w-xl flex-col gap-10 px-5 pb-[44px] pt-14 md:max-w-fit md:gap-[88px] lg:max-w-[1304px] lg:pt-88px">
       <h3 className="hidden">Features section</h3>
-      <div className="md:flex ">
+      <div className="md:flex">
         <div className="mb-10 md:mb-0 md:w-1/2 md:pr-10 lg:pr-[76px]">
           <p className="mb-4 text-xl font-bold leading-[26px] lg:text-32px lg:leading-[48px]">
             Dopasowane wyszukiwanie
@@ -22,9 +22,10 @@ export const Features = () => {
             width={700}
             height={700}
             loading="lazy"
-            src="/finderMent.png"
+            src="/finderMent2.png"
             alt="Picture of finding a mentor"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="rounded-t-xl"
           />
         </div>
       </div>
@@ -46,7 +47,7 @@ export const Features = () => {
             width={700}
             height={700}
             loading="lazy"
-            src="/session1.png"
+            src="/profile.png"
             alt="Mentor profile page"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
@@ -73,7 +74,7 @@ export const Features = () => {
             src="/chatScreen2.png"
             alt="Picture of chat history"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className='rounded-t-xl'
+            className="rounded-t-xl"
           />
         </div>
       </div>

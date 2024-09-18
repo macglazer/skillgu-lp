@@ -34,9 +34,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
                 avatar_url:
                     'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
                 description:
-                    'Pomysłodawca, założyciel oraz jeden z programistów Skillgu. Od zawsze planowałem założyć własną firmę, a Skillgu jest realizacją tej wizji.' +
-                    ' Jako członek zespołu programistycznego, aktywnie uczestniczę w rozwijaniu naszej platformy, łącząc technologię z moją wizją rozwoju kariery. ' +
-                    'Głęboko wierzę, że praca z mentorami przyspiesza rozwój zawodowy, pomaga w pokonywaniu barier i odblokowywaniu potencjału na każdym etapie kariery.',
+                    'Pomysłodawca, założyciel oraz jeden z programistów Skillgu. Od zawsze planowałem założyć własną firmę, a Skillgu jest realizacją tej wizji. Jako członek zespołu programistycznego, aktywnie uczestniczę w rozwijaniu naszej platformy, łącząc technologię z moją wizją rozwoju kariery. Głęboko wierzę, że praca z mentorami przyspiesza rozwój zawodowy, pomaga w pokonywaniu barier i odblokowywaniu potencjału na każdym etapie kariery.',
                 id: '1',
                 name: 'Maciej Glazer',
                 title: 'Founder Skillgu',
@@ -80,7 +78,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
                 avatar_url:
                     'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
                 description:
-                    'Radosław współptwórca skillgu.com, świetny teammate oraz senior front-developer i team leader z 15 letnim stażem. W Skillgu współodpowiedzialny za front i super atmosferę. Radosław oprócz swoich usług jest również mentorem. Po więcej informacji zapraszamy na profil Radosława',
+                    'Radosław współtwórca skillgu.com, świetny teammate oraz senior frontend-developer i team leader z 15 letnim stażem. W Skillgu współodpowiedzialny za front i super atmosferę. Radosław oprócz swoich usług jest również mentorem. Po więcej informacji zapraszamy na profil Radosława',
                 id: '4',
                 name: 'Radosław Żaczkiewicz',
                 title: 'Senior React Developer',
@@ -94,7 +92,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
                 avatar_url:
                     'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
                 description:
-                    'Małgorzata front-developer`ka, współtwórczyni skillgu oraz super koleżanka. Razem z Radosławem trzyma rękę na pulsie przy tworzeniu skillgu. Magłorzata również chętnie pomoże nowicjuszom wejść na rynek IT',
+                    'Małgorzata frontend-developer, współtwórczyni skillgu oraz super koleżanka. Razem z Radosławem trzyma rękę na pulsie przy tworzeniu skillgu. Magłgorzata również chętnie pomoże nowicjuszom wejść na rynek IT',
                 id: '3',
                 name: 'Małgorzata Kowacka',
                 title: 'Frontend React Developer',

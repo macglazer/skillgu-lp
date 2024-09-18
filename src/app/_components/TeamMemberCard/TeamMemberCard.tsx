@@ -44,7 +44,7 @@ export const TeamMemberCard = ({
                 href={socials.linkedin as Route}
                 aria-label="go to linkedin profile"
               >
-                <Linkedin />
+                <Linkedin size="24"/>
               </Link>
             ) : null}
           </div>
