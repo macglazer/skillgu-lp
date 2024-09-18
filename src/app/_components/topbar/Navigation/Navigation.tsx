@@ -6,14 +6,15 @@ import clx from 'classnames'
 import { Paths } from '@/app/paths'
 
 const navLinks = [
-  { name: 'O nas', id: 'about', href: Paths.ABOUT },
+  { name: 'Strona główna', id: 'home', href: Paths.HOME },
+  { name: 'Dla mentorów', id: 'mentors', href: Paths.FORMENTORS },
+  { name: 'Dla mentee', id: 'mentee', href: Paths.FORMENTEE },
   {
     name: 'Lista mentorów',
     id: 'mentors',
     href: `${Paths.HOME}#mentors-section`,
   },
   { name: 'Mój profil', id: 'login', href: Paths.LOGIN },
-
 ]
 
 export const Navigation = ({
@@ -50,8 +51,8 @@ export const Navigation = ({
         {/*  Zaloguj się*/}
         {/*</Link>*/}
         <Link
-            href={Paths.REGISTER}
-            className="rounded-full bg-secondaryLight px-4 py-10px text-center text-14px font-semibold text-secondary"
+          href={Paths.REGISTER}
+          className="rounded-full bg-secondaryLight px-4 py-10px text-center text-14px font-semibold text-secondary"
         >
           Zostań mentorem
         </Link>

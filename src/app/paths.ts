@@ -2,6 +2,8 @@ export enum Paths {
   HOME = '/',
   ABOUT = '/about',
   MENTORS = 'https://app.skillgu.com/search-mentors',
+  FORMENTORS = '/mentors',
+  FORMENTEE = '/mentee',
   PRICING = '/pricing',
   MENTORPROFILE = 'https://app.skillgu.com/mentor',
   BLOG = '/blog',
