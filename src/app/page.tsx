@@ -1,11 +1,11 @@
 import {
+  CtaDedicated,
   Faq,
-  Features,
+  FeaturesNew,
   HeroBanner,
   MentorsList,
   Reviews,
 } from '@/app/_components'
-import { CtaDedicated } from './_components/cta-dedicated'
 
 type HomePageType = {
   readonly searchParams: {
@@ -20,7 +20,7 @@ export default function HomePage({ searchParams }: HomePageType) {
   return (
     <>
       <HeroBanner />
-      <Features />
+      <FeaturesNew />
       <MentorsList currentCategory={currentCategory} />
       <Reviews reviewId={reviewId} />
       <Faq />
