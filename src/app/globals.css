@@ -28,6 +28,9 @@ body {
   .link-primary-rounded {
     @apply rounded-full bg-secondary text-white text-center font-semibold;
   }
+  .link-secondary-rounded {
+    @apply rounded-full text-secondary bg-secondary/10 text-center font-semibold;
+  }
 
   .link-primary {
     @apply rounded-xl bg-secondary text-center font-semibold text-base000;
