@@ -42,7 +42,7 @@ export const HeroBanner = () => {
 
     return (
         <section className="relative m-auto px-5 lg:max-w-[1440px]">
-            <div className="m-auto max-w-3xl px-5 py-24">
+            <div className="m-auto px-5 py-24">
                 <h3 className="hidden">Skillgu home page</h3>
                 <div className="flex flex-col justify-center items-center mb-8 w-full text-center text-32px font-bold leading-[48px] tracking-[-1px] text-primary lg:text-48px lg:leading-72px lg:tracking-[-2px]">
                     <span className="font-semibold tracking-wide text-primary">
@@ -61,7 +61,7 @@ export const HeroBanner = () => {
                 >
                     Znajdź mentora
                 </Link>
-                <Suspense fallback={<div className="h-[407px] rounded-3xl border" />}>
+                <Suspense fallback={<div className="h-[400px] md:h-[495px] lg:h-[645px] rounded-3xl border" />}>
                     <HeroBannerVideo />
                 </Suspense>
             </div>

@@ -92,7 +92,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
                 avatar_url:
                     'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
                 description:
-                    'Małgorzata frontend-developer, współtwórczyni skillgu oraz super koleżanka. Razem z Radosławem trzyma rękę na pulsie przy tworzeniu skillgu. Magłgorzata również chętnie pomoże nowicjuszom wejść na rynek IT',
+                    'Małgorzata frontend-developer, współtwórczyni skillgu oraz super koleżanka. Razem z Radosławem trzyma rękę na pulsie przy tworzeniu skillgu. Małgorzata również chętnie pomoże nowicjuszom wejść na rynek IT',
                 id: '3',
                 name: 'Małgorzata Kowacka',
                 title: 'Frontend React Developer',
@@ -105,7 +105,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         ]
         return {
             members,
-            total: 10,
+            total: 6,
         }
     } catch (error) {
         console.error('Error fetching mentors:', error)
