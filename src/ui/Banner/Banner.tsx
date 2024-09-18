@@ -26,7 +26,7 @@ const data = {
 
 export const Banner = ({ type }: BannerPropsTypes) => {
   return (
-    <div className="flex w-full flex-col rounded-[20px] border border-base400 bg-secondary/[2%] p-10 md:max-w-[610px] lg:gap-4">
+    <div className="flex w-full flex-col rounded-[20px] border border-base400 bg-secondary/[2%] p-10 md:w-[50%] lg:max-w-[610px] lg:gap-4">
       <h3 className="text-3xl font-bold leading-72px tracking-tight text-secondary lg:text-48px">
         {data[type].title}
       </h3>
