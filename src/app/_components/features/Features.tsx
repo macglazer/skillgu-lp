@@ -17,15 +17,15 @@ export const Features = () => {
             które odpowiada Twoim oczekiwaniom.
           </p>
         </div>
-        <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
+        <div className="md:w-1/2 lg:rounded-[20px]">
           <Image
             width={700}
             height={700}
             loading="lazy"
-            src="/finderMent2.png"
+            src="/finderMent1.png"
             alt="Picture of finding a mentor"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="rounded-t-xl"
+            className="rounded-lg border border-base400 lg:rounded-[20px]"
           />
         </div>
       </div>
@@ -41,15 +41,15 @@ export const Features = () => {
             ofertę oraz pomaga zdobywać wiarygondność.
           </p>
         </div>
-        <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
+        <div className="md:w-1/2 lg:rounded-[20px]">
           <Image
-            className="rounded-t-[12px]"
             width={700}
             height={700}
             loading="lazy"
-            src="/profile.png"
+            src="/profile1.png"
             alt="Mentor profile page"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="rounded-lg border border-base400 lg:rounded-[20px]"
           />
         </div>
       </div>
@@ -66,15 +66,15 @@ export const Features = () => {
             bieżąco.
           </p>
         </div>
-        <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
+        <div className="md:w-1/2 lg:rounded-[20px]">
           <Image
             width={700}
             height={700}
             loading="lazy"
-            src="/chatScreen2.png"
+            src="/chatScreen1.png"
             alt="Picture of chat history"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="rounded-t-xl"
+            className="rounded-lg border border-base400 lg:rounded-[20px]"
           />
         </div>
       </div>
@@ -90,19 +90,18 @@ export const Features = () => {
             przypomną ci o tym nasze notyfikacje
           </p>
         </div>
-        <div className="rounded-lg bg-secondary/5 px-5 pt-[14px] md:w-1/2 lg:rounded-[20px] lg:px-10 lg:pt-11">
+        <div className="rounded-lg md:w-1/2 lg:rounded-[20px]">
           <Image
             width={700}
             height={700}
-            src="/calendar.png"
+            src="/calendar1.png"
             loading="lazy"
             alt="Picture of app caledar"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="rounded-lg border border-base400 lg:rounded-[20px]"
           />
         </div>
       </div>
     </section>
-
-
   )
 }
