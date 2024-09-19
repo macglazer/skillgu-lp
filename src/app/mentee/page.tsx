@@ -3,8 +3,15 @@ import { Banner } from '@/ui/Banner/Banner'
 import { CheckDecorative } from '@/ui/icons/CheckDecorative'
 import { Stripe } from '@/ui/icons/Stripe'
 import Image from 'next/image'
+import { MentorsList } from '../_components'
 
-export default async function MenteePage() {
+type MenteePageType = {
+  readonly searchParams: {
+    cat: string
+  }
+}
+export default async function MenteePage({ searchParams }: MenteePageType) {
+  const currentCategory = searchParams.cat?.toString() ?? ''
   return (
     <section className="m-auto flex w-full flex-col gap-[100px] px-5 py-[88px] lg:max-w-[1304px]">
       <h3 className="hidden">Dla mentora</h3>
@@ -79,6 +86,7 @@ export default async function MenteePage() {
           </div>
         </div>
       </div>
+      <MentorsList currentCategory={currentCategory} />
     </section>
   )
 }
