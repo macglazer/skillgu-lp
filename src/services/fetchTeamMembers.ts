@@ -46,7 +46,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
             },
             {
                 avatar_url:
-                    'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+                    'https://res.cloudinary.com/dkclg8ppw/image/upload/v1726559713/panmyehduxwrlesfsquy.jpg',
                 description:
                     'Współpomysłodawca, a w bieżącej pracy zajmuje się kwestami związanymi z rozwojem funkcjonalnym platformy, testowaniem i badaniem nowych rozwiązań oraz obszarem doświadczeń użytkownika (UX). Dzielnie „walczy” też na polu marketingu, bazując na swoim kilkuletnim doświadczeniu związanym z PR, wystąpieniami publicznymi i kształtowaniu wizerunku medialnego. ',
                 id: '2',
