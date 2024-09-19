@@ -25,7 +25,7 @@ export const HeroBanner = () => {
   ]
 
   return (
-    <section className="relative m-auto px-5 lg:max-w-[1440px]">
+    <section className="relative m-auto px-5 lg:max-w-[1304px]">
       <div className="m-auto px-5 pt-88px">
         <h3 className="hidden">Skillgu home page</h3>
 
@@ -38,7 +38,7 @@ export const HeroBanner = () => {
               </span>{' '}
               <TypingAnimation
                 words={textArray}
-                typingSpeed={3}
+                typingSpeed={5}
                 deletingSpeed={9}
                 deletingDelay={1000}
                 className="mt-4 font-bold text-orange-500 transition-opacity duration-500 ease-in-out"
