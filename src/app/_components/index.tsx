@@ -1,7 +1,6 @@
 export * from './cta-banner'
 export * from './faq'
 export * from './features'
-export * from './features-new'
 export * from './footer'
 export * from '../hero-banner'
 export * from './mentors-list'

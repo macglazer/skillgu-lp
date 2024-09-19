@@ -1,46 +1,15 @@
+import { AboutSkillgu } from '@/ui/AboutSkillgu/AboutSkillgu'
 import { Banner } from '@/ui/Banner/Banner'
 import { CheckDecorative } from '@/ui/icons/CheckDecorative'
 import { Stripe } from '@/ui/icons/Stripe'
 import Image from 'next/image'
 
 export default async function MentorPage() {
-  const trades = [
-    'Technicznej',
-    'Programowania',
-    'Rozwoju Startupów',
-    'Biznesu',
-    'Marketingu',
-    'UX/UI Designu',
-    'Zarządzania Projektami',
-  ]
   return (
     <section className="m-auto flex w-full flex-col gap-[100px] px-5 py-[88px] lg:max-w-[1304px]">
       <h3 className="hidden">Dla mentora</h3>
       <div className="flex flex-col items-stretch justify-between gap-8 md:flex-row lg:gap-[100px]">
-        <div className="mb-6 mt-4 w-full md:w-[50%]">
-          <p className="mb-5 max-w-[600px] text-4xl font-bold leading-[56px] tracking-tight text-primary lg:text-48px lg:leading-[84px]">
-            Czym jest Skillgu?
-          </p>
-          <p className="mb-5 text-14px font-medium leading-6 text-base600 lg:text-base lg:leading-[28.8px]">
-            Skillgu to platforma stworzona z myślą o tysiącach mentorów,
-            trenerów i osób, chcących wymieniać wiedzę oraz doświadczenia
-            online.
-          </p>
-          <div className="mt-10 md:mt-4">
-            <strong className="mb-6 inline-block text-xl font-bold leading-6">
-              Stawiamy głównie na tematykę z branży
-            </strong>
-            <ul className="flex flex-wrap gap-3">
-              {trades.map((item) => (
-                <li key={item}>
-                  <p className="rounded-full bg-base200 px-6 py-[10px] text-14px font-semibold leading-[25.2px]">
-                    {item}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <AboutSkillgu type="mentor"/>
         <Banner type="mentor" />
       </div>
       <div className="flex flex-col justify-between gap-6 overflow-hidden rounded-[20px] border border-base400 pl-10 pt-10 lg:items-end xl:flex-row xl:items-start xl:gap-[88px]">

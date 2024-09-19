@@ -1,7 +1,7 @@
 import {
   CtaDedicated,
   Faq,
-  FeaturesNew,
+  Features,
   HeroBanner,
   MentorsList,
   Reviews,
@@ -20,7 +20,7 @@ export default function HomePage({ searchParams }: HomePageType) {
   return (
     <>
       <HeroBanner />
-      <FeaturesNew />
+      <Features />
       <MentorsList currentCategory={currentCategory} />
       <Reviews reviewId={reviewId} />
       <Faq />
