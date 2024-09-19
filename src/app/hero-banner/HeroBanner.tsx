@@ -31,11 +31,11 @@ export const HeroBanner = () => {
       <div className="m-auto px-5 pt-88px">
         <h3 className="hidden">Skillgu home page</h3>
 
-        <div className="mb-88px flex flex-col md:flex-row w-full items-start justify-between gap-10 text-primary">
+        <div className="mb-88px flex w-full flex-col items-start justify-between gap-10 text-primary md:flex-row">
           <div>
             <p className="mb-8 w-full text-4xl font-bold leading-[56px] tracking-tight lg:text-56px lg:leading-[84px]">
               <span className="text-4xl font-bold leading-[56px] tracking-tight text-primary lg:text-56px lg:leading-[84px]">
-                Znajdź swojego <br className="hidden md:block"/> mentora od:
+                Znajdź swojego <br className="hidden md:block" /> mentora od:
                 <br />
               </span>{' '}
               <TypingAnimation
@@ -58,14 +58,13 @@ export const HeroBanner = () => {
             <p className="mb-4 text-2xl font-bold tracking-tight lg:text-3xl">
               Czym jest Skillgu?
             </p>
-            <p className="mb-4 text-14px lg:text-base font-medium leading-6 lg:leading-[28.8px] text-base600">
+            <p className="mb-4 text-14px font-medium leading-6 text-base600 lg:text-base lg:leading-[28.8px]">
               Skillgu to platforma stworzona z myślą o tysiącach mentorów,
               trenerów i osób, chcących wymieniać wiedzę oraz doświadczenia
               online. Jesteśmy również uzupełnieniem dla kursów i szkoleń wideo.
             </p>
-            <span className="lg:flex lg:gap-2 text-base font-semibold leading-[28.8px] text-base800">
-              Płatności obsługiwane przez {" "}
-              <Stripe className="inline"/>
+            <span className="text-base font-semibold leading-[28.8px] text-base800 lg:flex lg:gap-2">
+              Płatności obsługiwane przez <Stripe className="inline" />
             </span>
           </div>
         </div>
