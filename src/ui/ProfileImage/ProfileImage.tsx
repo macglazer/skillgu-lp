@@ -18,7 +18,7 @@ export const ProfileImage = ({
         width={320}
         height={200}
         loading="lazy"
-        className={clx('rounded-[20px] object-contain object-center', className)}
+        className={clx('rounded-[20px] object-cover object-center', className)}
       />
     </div>
   )
