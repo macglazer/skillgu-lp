@@ -19,9 +19,7 @@ export const HeroBanner = () => {
     'marketingu',
     'rozwoju zawodowego',
     'strategii biznesowej',
-    'projektowania graficznego',
     'zarządzania projektami',
-    'innowacji technologicznych',
     'montażu video',
     'social media',
   ]
