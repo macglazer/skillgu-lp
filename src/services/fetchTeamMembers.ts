@@ -32,7 +32,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         const members = [
             {
                 avatar_url:
-                    'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+                    'https://res.cloudinary.com/dkclg8ppw/image/upload/v1726740968/1579085433745_zhea7a.png',
                 description:
                     'Pomysłodawca, założyciel oraz jeden z programistów Skillgu. Od zawsze planowałem założyć własną firmę, a Skillgu jest realizacją tej wizji. Jako członek zespołu programistycznego, aktywnie uczestniczę w rozwijaniu naszej platformy, łącząc technologię z moją wizją rozwoju kariery. Głęboko wierzę, że praca z mentorami przyspiesza rozwój zawodowy, pomaga w pokonywaniu barier i odblokowywaniu potencjału na każdym etapie kariery.',
                 id: '1',
@@ -46,7 +46,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
             },
             {
                 avatar_url:
-                    'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+                    'https://res.cloudinary.com/dkclg8ppw/image/upload/v1726559713/panmyehduxwrlesfsquy.jpg',
                 description:
                     'Współpomysłodawca, a w bieżącej pracy zajmuje się kwestami związanymi z rozwojem funkcjonalnym platformy, testowaniem i badaniem nowych rozwiązań oraz obszarem doświadczeń użytkownika (UX). Dzielnie „walczy” też na polu marketingu, bazując na swoim kilkuletnim doświadczeniu związanym z PR, wystąpieniami publicznymi i kształtowaniu wizerunku medialnego. ',
                 id: '2',
@@ -76,7 +76,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
             // },
             {
                 avatar_url:
-                    'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+                    'https://res.cloudinary.com/dkclg8ppw/image/upload/v1726498572/wpp8ptfvxi7hoex2snmo.jpg',
                 description:
                     'Radosław współtwórca skillgu.com, świetny teammate oraz senior frontend-developer i team leader z 15 letnim stażem. W Skillgu współodpowiedzialny za front i super atmosferę. Radosław oprócz swoich usług jest również mentorem. Po więcej informacji zapraszamy na profil Radosława',
                 id: '4',
@@ -90,7 +90,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
             },
             {
                 avatar_url:
-                    'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
+                    'https://res.cloudinary.com/dkclg8ppw/image/upload/v1726745421/MalgorzataK_sgjwdh.jpg',
                 description:
                     'Małgorzata frontend-developer, współtwórczyni skillgu oraz super koleżanka. Razem z Radosławem trzyma rękę na pulsie przy tworzeniu skillgu. Małgorzata również chętnie pomoże nowicjuszom wejść na rynek IT',
                 id: '3',
