@@ -67,10 +67,10 @@ export default async function MenteePage({ searchParams }: MenteePageType) {
               width={700}
               height={700}
               loading="lazy"
-              src="/payments.png"
+              src="/mentee-sub.png"
               alt="Mentor profile page"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="max-w-[88%] md:mb-10 lg:mb-0"
+              className="max-w-[88%] rounded-b-xl rounded-t-xl border border-base400 md:mb-6 xl:mb-0"
             />
           </div>
           <div className="w-full md:w-[50%] lg:w-full">
