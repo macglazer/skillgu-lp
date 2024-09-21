@@ -36,7 +36,7 @@ export default async function MentorPage() {
               <li className="flex items-center gap-2">
                 <CheckDecorative />
                 <p className="text-xs font-semibold text-base600 lg:text-sm">
-                  Twoje startowe centrum dowodzenia mentee
+                  Twoje startowe centrum dowodzenia szkoleniami i mentee
                 </p>
               </li>
               <li className="flex items-center gap-2">
@@ -48,7 +48,7 @@ export default async function MentorPage() {
               <li className="flex items-center gap-2">
                 <CheckDecorative />
                 <p className="text-xs font-semibold text-base600 lg:text-sm">
-                  Możliwość dla mentee na bezpośredni kontakt z Tobą
+                 Jasne zasady współpracy z mentee
                 </p>
               </li>
             </ul>
