@@ -9,31 +9,31 @@ const data = {
   mentor: {
     title: 'Czym jest Skillgu?',
     description:
-      'Skillgu to platforma stworzona z myślą o tysiącach mentorów, trenerów i osób, chcących wymieniać wiedzę oraz doświadczenia online. ',
+      'Skillgu to platforma stworzona z myślą o mentorach i trenerach, którzy chcą rozszerzyć swoją ofertę o indywidualne lub grupowe spotkania z mentee. Dzięki Skillgu, łatwo nawiążesz bezpośredni kontakt, oferując spersonalizowane wsparcie i praktyczne wskazówki w formie konsultacji, warsztatów czy sesji mentoringowych.',
     subtitle: 'Dla mentee',
     trades: [
-      'Technicznej',
-      'Programowania',
-      'Rozwoju Startupów',
+      'IT',
+      'Startupów',
       'Biznesu',
       'Marketingu',
       'UX/UI Designu',
       'Zarządzania Projektami',
+      'Rozwoju osobistego w biznesie',
     ],
   },
   mentee: {
     title: 'Czym jest Skillgu?',
     description:
-      'Skillgu to platforma stworzona z myślą o tysiącach mentorów, trenerów i osób, chcących wymieniać wiedzę oraz doświadczenia online. ',
+        'Skillgu to platforma stworzona z myślą o mentee, którzy chcą rozszerzyć swoją wiedzę o indywidualne lub grupowe spotkania z mentorem. Dzięki Skillgu, łatwo nawiążesz bezpośredni kontakt, znajdziesz spersonalizowane wsparcie i praktyczne wskazówki w formie konsultacji, warsztatów czy sesji mentoringowych.',
     subtitle: 'Dla mentee',
     trades: [
-      'Technicznej',
-      'Programowania',
-      'Rozwoju Startupów',
+      'IT',
+      'Startupów',
       'Biznesu',
       'Marketingu',
       'UX/UI Designu',
       'Zarządzania Projektami',
+      'Rozwoju osobistego w biznesie',
     ],
   },
 }

@@ -19,7 +19,7 @@ export default async function MentorPage() {
               Współpraca Skillgu z mentorami
             </p>
             <p className="mb-5 w-[94%] text-14px font-medium leading-6 text-base600 lg:mb-8 lg:text-base lg:leading-[28.8px]">
-              Możliwe, że baza Twoich uczniów jest już wypełniona po brzegi i
+              Możliwe, że baza Twoich mentee jest już wypełniona po brzegi i
               nie zabiegasz o nowe osoby. W takim wypadku również możemy
               współpracować!
             </p>
@@ -29,26 +29,26 @@ export default async function MentorPage() {
               Wyższy poziom organizacji
             </p>
             <p className="mb-8 w-[94%] text-14px font-medium leading-6 text-base600 lg:text-base lg:leading-[28.8px]">
-              Przenosząc się do nas, ułatwiasz codzienność Twoim podopiecznym, a
+              Korzystając z naszej platformy, ułatwiasz codzienność Twoim podopiecznym, a
               sobie poprawiasz komfort działania.
             </p>
             <ul className="mb-10 flex flex-col gap-4">
               <li className="flex items-center gap-2">
                 <CheckDecorative />
                 <p className="text-xs font-semibold text-base600 lg:text-sm">
-                  Ujednolicona komunikacja
+                  Twoje startowe centrum dowodzenia mentee
                 </p>
               </li>
               <li className="flex items-center gap-2">
                 <CheckDecorative />
                 <p className="text-xs font-semibold text-base600 lg:text-sm">
-                  Automatyczne wypłaty <Stripe className="inline"/>
+                  Integracja wypłat dzięki <Stripe className="inline"/>
                 </p>
               </li>
               <li className="flex items-center gap-2">
                 <CheckDecorative />
                 <p className="text-xs font-semibold text-base600 lg:text-sm">
-                  Planowanie i fakturowanie
+                  Możliwość dla mentee na bezpośredni kontakt z Tobą
                 </p>
               </li>
             </ul>

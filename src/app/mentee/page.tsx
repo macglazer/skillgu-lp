@@ -26,36 +26,35 @@ export default async function MenteePage({ searchParams }: MenteePageType) {
               Benefity dla mentee
             </p>
             <p className="mb-5 w-[94%] text-14px font-medium leading-6 text-base600 lg:mb-8 lg:text-base lg:leading-[28.8px]">
-              Możliwe, że baza Twoich uczniów jest już wypełniona po brzegi i
-              nie zabiegasz o nowe osoby. W takim wypadku również możemy
-              współpracować!
+            Jeżeli utknąłeś w miejscu, kursy online to za mało, albo po prostu potrzebujesz bezpośredniej pomocy w postaci konsultacji, przygotować się do interview,
+              popracować nad trudnym zagadnieniem, przebranżowić się lub przegadać plan na własny startup, Skillgu to własnie to miejsce, gdzie możesz znaleść
+              doświadczonego trenera.
             </p>
           </div>
           <div className="w-full md:w-[50%] lg:w-full">
             <p className="mb-5 inline-block text-xl font-bold leading-10 lg:mb-6 lg:text-[28px]">
-              Wyższy poziom organizacji
+             Czas to pieniądz
             </p>
             <p className="mb-8 w-[94%] text-14px font-medium leading-6 text-base600 lg:text-base lg:leading-[28.8px]">
-              Przenosząc się do nas, ułatwiasz codzienność Twoim podopiecznym, a
-              sobie poprawiasz komfort działania.
+              Wykorzytaj doświadczenie ludzi którzy byli tam, gdzie ty chcesz być. Jasne zasady, współpracy.
             </p>
             <ul className="mb-10 flex flex-col gap-4">
               <li className="flex items-center gap-2">
                 <CheckDecorative />
                 <p className="text-xs font-semibold text-base600 lg:text-sm">
-                  Ujednolicona komunikacja
+                 Zweryfikowani mentorzy
                 </p>
               </li>
               <li className="flex items-center gap-2">
                 <CheckDecorative />
                 <p className="text-xs font-semibold text-base600 lg:text-sm">
-                  Automatyczne wypłaty <Stripe className="inline" />
+                  Bezpieczne transakcje dzięki obsłudze z <Stripe className="inline" />
                 </p>
               </li>
               <li className="flex items-center gap-2">
                 <CheckDecorative />
                 <p className="text-xs font-semibold text-base600 lg:text-sm">
-                  Planowanie i fakturowanie
+                  Jasne zasady współpracy.
                 </p>
               </li>
             </ul>
