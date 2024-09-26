@@ -26,8 +26,8 @@ export default async function MenteePage({ searchParams }: MenteePageType) {
               Benefity dla mentee
             </p>
             <p className="mb-5 w-[94%] text-14px font-medium leading-6 text-base600 lg:mb-8 lg:text-base lg:leading-[28.8px]">
-              Jeśli Twoja kariera utknęła w miejscu, kursy online to za mało, albo po prostu potrzebujesz bezpośredniej pomocy w postaci konsultacji, przygotować się do interview,
-              popracować nad trudnym zagaFdnieniem, przebranżowić, lub przeanalizować plan na własny startup, Skillgu to własnie to miejsce, gdzie możesz znaleść
+              Jeśli Twoja kariera utknęła w miejscu, kursy online to za mało, albo po prostu potrzebujesz bezpośredniej pomocy w postaci konsultacji eksperta, szkolenia 1:1, przygotować się do interview,
+              popracować nad trudnym zagadnieniem, przebranżowić, lub przeanalizować plan na własny startup, Skillgu to miejsce, gdzie możesz znaleść
               doświadczonego konsultanta.
             </p>
           </div>
