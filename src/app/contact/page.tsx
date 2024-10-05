@@ -6,7 +6,6 @@ import { sendMessage } from '@/services/sendMessage'
 export default async function Contact() {
   const createAndSendMessage = async (formData: FormData) => {
     'use server'
-
     try {
       const data = {
         email: formData.get('email') as string,
