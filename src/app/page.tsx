@@ -6,7 +6,7 @@ import {
     MentorsList,
     Reviews,
 } from '@/app/_components';
-import CookiePopup from "@/ui/cookiePopup/CookiePopup";
+// import CookiePopup from "@/ui/cookiePopup/CookiePopup";
 
 type HomePageType = {
     readonly searchParams: {
@@ -21,7 +21,7 @@ export default function HomePage({ searchParams }: HomePageType) {
 
     return (
         <>
-            <CookiePopup /> {/* Dodaj popup */}
+            {/*<CookiePopup /> /!* Dodaj popup *!/*/}
             <HeroBanner />
             <Features />
             <MentorsList currentCategory={currentCategory} />
