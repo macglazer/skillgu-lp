@@ -32,7 +32,7 @@ const CookieConsent: React.FC = () => {
                 <div className={styles.iconWrapper}>
                     <Image
                         loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/37032e17ed8859078f0156ab87777e78e20d273118988695c73e67c003101f55?placeholderIfAbsent=true&apiKey=27f6415f110b4492ae75a2217d69af79"
+                        src="/cookie.svg"
                         className={styles.icon}
                         alt="Cookie icon"
                         width={80}
