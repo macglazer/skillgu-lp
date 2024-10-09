@@ -6,7 +6,6 @@ import {
     MentorsList,
     Reviews,
 } from '@/app/_components';
-import CookiePopup from "@/ui/cookiePopup/CookiePopup";
 import Script from "next/script";
 
 
