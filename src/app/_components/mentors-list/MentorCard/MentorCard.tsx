@@ -38,7 +38,7 @@ export const MentorCard = ({
         <ProfileImage
           alt={`${name} profile image`}
           src={avatar_url}
-          className="max-h-[200px] w-full"
+          className="max-h-[200px] w-full object-cover"
         />
         {special ? (
           <p className="absolute left-2 top-2 rounded-3xl bg-success200 px-4 py-1 text-xs font-semibold text-success100">

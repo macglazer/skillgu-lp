@@ -22,7 +22,7 @@ export const TeamMemberCard = ({
         <ProfileImage
           alt={`${name} profile image`}
           src={avatar_url}
-          className="max-h-[253px] w-full lg:max-h-[310px]"
+          className="max-h-[253px] w-full lg:max-h-[310px] object-contain"
         />
       </div>
       <div>

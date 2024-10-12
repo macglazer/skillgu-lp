@@ -12,7 +12,7 @@ const navLinks = [
   {
     name: 'Lista mentorów',
     id: 'mentors',
-    href: `${Paths.HOME}#mentors-section`,
+    href: Paths.MENTORS,
   },
   { name: 'Mój profil', id: 'login', href: Paths.LOGIN },
 ]
