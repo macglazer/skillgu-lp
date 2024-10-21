@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import { InputText } from '@/ui/InputText'
 import { RadioField } from '@/ui/RadioField/RadioField'
@@ -24,68 +24,89 @@ export const ContactForm = ({
   const ref = useRef<HTMLFormElement>(null)
 
   const submitAction = async (formData: FormData) => {
-    const response = await createAndSendMessage(formData)
+    const response = await createAndSendMessage(formData);
     if (response.isSuccess) {
       setIsModalShown(true)
+
       return ref.current?.reset()
     }
   }
 
+  useEffect(() => {
+    if (isModalShown) {
+      const timer = setTimeout(() => {
+        setIsModalShown(false)
+      }, 3000)
+
+      return () => clearTimeout(timer)
+    }
+  }, [isModalShown])
+
   return (
     <div className="relative">
-     {true&& <div className="absolute flex justify-center items-center top-0 bottom-0 left-0 right-0 bg-base000/80"><div className="max-w-92 border bg-white px-8 pt-2 pb-8 rounded-2xl p"><button className="w-6 h-6 border border-base400 rounded-lg bg-base200/50" onClick={()=>setIsModalShown(false)}>X</button>
-        <p className="font-medium font-semibold mb-2">Wiadomośc została wysłana</p>
-        <p className="text-base800 text-sm font-medium ">Powinieneś dostać odpowiedź w przeciągu najbliższych kilku dni. </p>
-        <button className="link-secondary-rounded text-sm px-3 py-2">Przejdź do strony głównej 
-          </button></div></div>}
-     <form ref={ref} action={submitAction}>
-      <div className="mb-6 flex w-full flex-col gap-8 md:flex-row">
-        <InputText
-          label="Twój e-mail"
-          name="email"
-          type="email"
-          placeholder="np: jankowalski@skullgu.com"
-          required
-        />
-        <InputText
-          label="Twoje imię"
-          name="name"
-          placeholder="np: Jan Kowalski"
-          required
-        />
-      </div>
-      <div className="mb-8 w-full">
-        <p className="mb-3 block text-14px font-semibold leading-6">
-          Kontaktuję się w sprawie...
-        </p>
-        <div className="flex flex-col gap-6 md:flex-row">
-          {contactTypes.map(({ id, label, contactType }) => (
-            <RadioField
-              key={id}
-              label={label}
-              name="contactType"
-              value={contactType}
-            />
-          ))}
+      {isModalShown && (
+        <div className="absolute bottom-0 left-[-5px] right-0 top-0 flex items-center justify-center bg-base000/90">
+          <div className="max-w-92 p rounded-2xl border bg-white px-8 pb-8 pt-4 shadow-sm">
+            <button
+              className="h-6 w-6 rounded-sm border border-base400 bg-base200/50"
+              onClick={() => setIsModalShown(false)}
+            >
+              X
+            </button>
+            <p className="my-2 font-semibold">Wiadomośc została wysłana</p>
+            <p className="text-sm font-medium text-base800">
+              Powinieneś dostać odpowiedź w przeciągu najbliższych kilku dni.{' '}
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="mb-8">
-        <InputText
-          tag="textarea"
-          label="Wiadomość"
-          name="message"
-          placeholder="Treść wiadomości"
-          required
-        />
-      </div>
-      <button
-        type="submit"
-        className="link-primary-rounded w-full px-8 py-3 text-base"
-      >
-        Wyślij wiadomość
-      </button>
-    </form>
+      )}
+      <form ref={ref} action={submitAction}>
+        <div className="mb-6 flex w-full flex-col gap-8 md:flex-row">
+          <InputText
+            label="Twój e-mail"
+            name="email"
+            type="email"
+            placeholder="np: jankowalski@skullgu.com"
+            required
+          />
+          <InputText
+            label="Twoje imię"
+            name="name"
+            placeholder="np: Jan Kowalski"
+            required
+          />
+        </div>
+        <div className="mb-8 w-full">
+          <p className="mb-3 block text-14px font-semibold leading-6">
+            Kontaktuję się w sprawie...
+          </p>
+          <div className="flex flex-col gap-6 md:flex-row">
+            {contactTypes.map(({ id, label, contactType }) => (
+              <RadioField
+                key={id}
+                label={label}
+                name="contactType"
+                value={contactType}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="mb-8">
+          <InputText
+            tag="textarea"
+            label="Wiadomość"
+            name="message"
+            placeholder="Treść wiadomości"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          className="link-primary-rounded w-full px-8 py-3 text-base"
+        >
+          Wyślij wiadomość
+        </button>
+      </form>
     </div>
-   
   )
 }
