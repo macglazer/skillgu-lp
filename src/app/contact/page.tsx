@@ -17,7 +17,9 @@ export default async function Contact() {
           | 'collaboration'
           | 'other',
       }
-      return await sendMessage(data)
+      const resp = await sendMessage(data)
+      console.log(resp)
+      return resp
     } catch (err) {
       return notFound()
     }

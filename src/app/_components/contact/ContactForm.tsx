@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 
 import { InputText } from '@/ui/InputText'
 import { RadioField } from '@/ui/RadioField/RadioField'
@@ -13,6 +13,7 @@ export const ContactForm = ({
     message?: string
   }>
 }) => {
+  const [isModalShown, setIsModalShown] = useState<boolean>(false)
   const contactTypes = [
     { id: '1', contactType: 'error', label: 'Błędu strony' },
     { id: '2', contactType: 'suggestion', label: 'Sugestia poprawy czegoś' },
@@ -24,11 +25,20 @@ export const ContactForm = ({
 
   const submitAction = async (formData: FormData) => {
     const response = await createAndSendMessage(formData)
-    if (response.isSuccess) ref.current?.reset()
+    if (response.isSuccess) {
+      setIsModalShown(true)
+      return ref.current?.reset()
+    }
   }
 
   return (
-    <form ref={ref} action={submitAction}>
+    <div className="relative">
+     {true&& <div className="absolute flex justify-center items-center top-0 bottom-0 left-0 right-0 bg-base000/80"><div className="max-w-92 border bg-white px-8 pt-2 pb-8 rounded-2xl p"><button className="w-6 h-6 border border-base400 rounded-lg bg-base200/50" onClick={()=>setIsModalShown(false)}>X</button>
+        <p className="font-medium font-semibold mb-2">Wiadomośc została wysłana</p>
+        <p className="text-base800 text-sm font-medium ">Powinieneś dostać odpowiedź w przeciągu najbliższych kilku dni. </p>
+        <button className="link-secondary-rounded text-sm px-3 py-2">Przejdź do strony głównej 
+          </button></div></div>}
+     <form ref={ref} action={submitAction}>
       <div className="mb-6 flex w-full flex-col gap-8 md:flex-row">
         <InputText
           label="Twój e-mail"
@@ -75,5 +85,7 @@ export const ContactForm = ({
         Wyślij wiadomość
       </button>
     </form>
+    </div>
+   
   )
 }
