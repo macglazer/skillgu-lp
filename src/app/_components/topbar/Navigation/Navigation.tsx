@@ -11,7 +11,7 @@ const navLinks = [
   { name: 'Dla mentee', id: 'mentee', href: Paths.FORMENTEE },
   {
     name: 'Lista mentorów',
-    id: 'mentors',
+    id: 'mentors-list',
     href: Paths.MENTORS,
   },
   { name: 'Mój profil', id: 'login', href: Paths.LOGIN },
