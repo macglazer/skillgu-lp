@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 
 import { InputText } from '@/ui/InputText'
 import { RadioField } from '@/ui/RadioField/RadioField'
+import { Close } from '@/ui/icons/Close'
 
 export const ContactForm = ({
   createAndSendMessage,
@@ -14,6 +15,8 @@ export const ContactForm = ({
   }>
 }) => {
   const [isModalShown, setIsModalShown] = useState<boolean>(false)
+  const [error, setError] = useState<boolean>(false)
+
   const contactTypes = [
     { id: '1', contactType: 'error', label: 'Błędu strony' },
     { id: '2', contactType: 'suggestion', label: 'Sugestia poprawy czegoś' },
@@ -24,11 +27,12 @@ export const ContactForm = ({
   const ref = useRef<HTMLFormElement>(null)
 
   const submitAction = async (formData: FormData) => {
-    const response = await createAndSendMessage(formData);
+    setIsModalShown(true)
+    const response = await createAndSendMessage(formData)
     if (response.isSuccess) {
-      setIsModalShown(true)
-
       return ref.current?.reset()
+    } else {
+      setError(true)
     }
   }
 
@@ -36,6 +40,7 @@ export const ContactForm = ({
     if (isModalShown) {
       const timer = setTimeout(() => {
         setIsModalShown(false)
+        setError(false)
       }, 3000)
 
       return () => clearTimeout(timer)
@@ -46,16 +51,25 @@ export const ContactForm = ({
     <div className="relative">
       {isModalShown && (
         <div className="absolute bottom-0 left-[-5px] right-0 top-0 flex items-center justify-center bg-base000/90">
-          <div className="max-w-92 p rounded-2xl border bg-white px-8 pb-8 pt-4 shadow-sm">
-            <button
-              className="h-6 w-6 rounded-sm border border-base400 bg-base200/50"
-              onClick={() => setIsModalShown(false)}
-            >
-              X
-            </button>
-            <p className="my-2 font-semibold">Wiadomośc została wysłana</p>
-            <p className="text-sm font-medium text-base800">
-              Powinieneś dostać odpowiedź w przeciągu najbliższych kilku dni.{' '}
+          <div className="w-full max-w-96 rounded-2xl border bg-white px-8 pb-8 pt-4 shadow-sm">
+            <div className="flex justify-end">
+              <button
+                className="flex h-10 w-10 items-center justify-center rounded-md border border-base400 bg-base200"
+                onClick={() => setIsModalShown(false)}
+              >
+                <Close />
+              </button>
+            </div>
+
+            <p className="my-3 text-xl font-semibold">
+              {error
+                ? 'Wystąpił błąd w czasie wysyłania wiadomości'
+                : 'Wiadomośc została wysłana'}
+            </p>
+            <p className="text-sm font-medium leading-5 text-base800">
+              {error
+                ? 'Spróbuj ponownie za kilka minut.'
+                : 'Powinieneś dostać odpowiedź w przeciągu najbliższych kilku dni'}
             </p>
           </div>
         </div>
