@@ -13,7 +13,7 @@ const HeroBannerVideo = React.lazy(() =>
 export const HeroBanner = () => {
   const textArray = [
     'IT',
-    'tartupów',
+    'startupów',
     'UX/UI',
     'tradingu',
     'biznesu',
