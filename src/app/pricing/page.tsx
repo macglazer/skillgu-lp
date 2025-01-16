@@ -11,19 +11,18 @@ export default async function Pricing() {
           type="free"
           price={0}
           properties={[
+            'Brak stałej opłaty miesięcznej',
             'Pełny dostęp do aplikacji',
             'Nieograniczona liczba mentee',
-            '18% prowizji od spotkania',
-            'Brak darmowych spotkań',
+            'Prowizja tylko 6%',
           ]}
         />
         <PricingPlan
           type="basic"
           price={89}
           properties={[
-            '5 darmowych spotkań w miesiącu',
             'Gwarancja stałej opłaty miesięcznej',
-            'Niższa prowizja: 10%',
+            'Niższa prowizja: 4%',
             'Pełny dostęp do aplikacji',
             'Nieograniczona liczba mentee',
           ]}
@@ -32,7 +31,6 @@ export default async function Pricing() {
           type="pro"
           price={190}
           properties={[
-            'Darmowe spotkania bez limitu',
             'Gwarancja stałej opłaty miesięcznej',
             'Brak prowizji',
             'Pełny dostęp do aplikacji',
