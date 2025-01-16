@@ -19,7 +19,7 @@ export default async function Pricing() {
         />
         <PricingPlan
           type="basic"
-          price={89}
+          price={90}
           properties={[
             'Gwarancja stałej opłaty miesięcznej',
             'Niższa prowizja: 4%',
