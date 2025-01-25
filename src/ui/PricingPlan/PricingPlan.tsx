@@ -15,7 +15,7 @@ export const PricingPlan = ({
 }: PricingPlanPropsType) => {
   const planName = {
     free: 'Free',
-    basic: 'Basic',
+    basic: 'Mid',
     pro: 'Pro',
   }
   const Icon = type === 'basic' ? Basic : Pro
