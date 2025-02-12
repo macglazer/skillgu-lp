@@ -10,7 +10,7 @@ type ResponseData = {
 export const fetchCategories = async (): Promise<ResponseData> => {
   try {
     const response = await axios.get(
-      'https://skillgu-app-345a75c03272.herokuapp.com/api/1.0/mentors/categories',
+      'https://api.skillgu.com/api/1.0/mentors/categories',
     )
     return response.data
   } catch (error) {

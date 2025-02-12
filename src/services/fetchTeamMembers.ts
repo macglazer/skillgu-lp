@@ -37,7 +37,7 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
         id: '1',
         name: 'Maciej Glazer',
         title: 'Founder Skillgu',
-        username: 'Maciekskillguru-1997887680',
+        username: 'Maciekskillgu-1997887680',
         socials: {
           skillgu: 'https://www.skillgu.com/',
           linkedin: 'https://www.linkedin.com/',
@@ -46,32 +46,16 @@ export const fetchTeamMembers = async (): Promise<ResponseData> => {
       {
         avatar_url: '/man.svg',
         description:
-          'Współpomysłodawca, a w bieżącej pracy zajmuje się kwestami związanymi z rozwojem funkcjonalnym platformy, testowaniem i badaniem nowych rozwiązań oraz obszarem doświadczeń użytkownika (UX). Dzielnie „walczy” też na polu marketingu, bazując na swoim kilkuletnim doświadczeniu związanym z PR, wystąpieniami publicznymi i kształtowaniu wizerunku medialnego. ',
+            'Comming soon.',
         id: '2',
-        name: 'Artur Barański',
-        title: 'Co-Founder',
-        username: 'art_baranski',
+        name: 'Nilanchala Panigrahy ',
+        title: 'CTO Founder Skillgu',
+        username: 'Nilanchala-1997887680',
         socials: {
           skillgu: 'https://www.skillgu.com/',
-          linkedin: 'https://www.linkedin.com/in/artur-baranski/',
+          linkedin: 'https://www.linkedin.com/',
         },
       },
-      // {
-      //     avatar_url:
-      //         'https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_640.jpg',
-      //     description:
-      //         'Człowiek backend oraz devops. Maksymalnie skupiony na zadaniach, pierwszy mentor skillgu, twórca „mentosów”.' +
-      //         ' Dołączył do zespołu, wnosząc ogromną wiedzę i doświadczenie, które szybko uczyniły go nieocenionym liderem technologicznym.' +
-      //         'Super kolega, na którego zawsze można liczyć.',
-      //     id: '5',
-      //     name: 'Artur Dudzik',
-      //     title: 'CTO',
-      //     username: 'dudziassoo',
-      //     socials: {
-      //         skillgu: 'https://www.skillgu.com/dudziassoo',
-      //         linkedin: 'https://www.linkedin.com/',
-      //     },
-      // },
       {
         avatar_url: '/man.svg',
         description:
