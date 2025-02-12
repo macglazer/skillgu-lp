@@ -10,7 +10,7 @@ type ResponseData = {
 export const fetchCategories = async (): Promise<ResponseData> => {
   try {
     const response = await axios.get(
-      'https://api.skillgu.com/api/1.0/mentors/categories',
+      '/api/1.0/mentors/categories',
     )
     return response.data
   } catch (error) {
