@@ -7,14 +7,14 @@ type ResponseData = {
   label: string
 }[]
 
-// export const fetchCategories = async (): Promise<ResponseData> => {
-//   try {
-//     const response = await axios.get(
-//         `${axios.defaults.baseURL}/api/1.0/mentors/categories`
-//     )
-//     return response.data
-//   } catch (error) {
-//     console.error('Error fetching categories:', error)
-//     throw error
-//   }
-// }
+export const fetchCategories = async (): Promise<ResponseData> => {
+  try {
+    const response = await axios.get(
+        `${axios.defaults.baseURL}/api/1.0/mentors/categories`
+    )
+    return response.data
+  } catch (error) {
+    console.error('Error fetching categories:', error)
+    throw error
+  }
+}
