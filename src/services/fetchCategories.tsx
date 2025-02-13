@@ -9,10 +9,12 @@ type ResponseData = {
 
 export const fetchCategories = async (): Promise<ResponseData> => {
   try {
-    const response = await axios.get('/api/1.0/mentors/categories'.trim());
-    return response.data;
+    const response = await axios.get(
+      'api/1.0/mentors/categories',
+    )
+    return response.data
   } catch (error) {
-    console.error('Error fetching categories:', error);
-    throw error;
+    console.error('Error fetching categories:', error)
+    throw error
   }
 }
